@@ -1,0 +1,8 @@
+@media (min-width: 768px) {
+    .website .home-hero {
+        background-image: url(../images/web-hero.png);
+        background-position: top right;
+        background-repeat: no-repeat;
+        background-size: auto 100%;
+    }
+}

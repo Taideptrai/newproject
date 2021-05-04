@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="ic-actions-multi-success" width="24" height="24" viewBox="0 0 24 24">
+    <defs>
+        <style>
+            .cls-2{fill:#f53d2d;fill-rule:evenodd}
+        </style>
+    </defs>
+    <path id="Rectangle_44" fill="none" d="M0 0H24V24H0z" data-name="Rectangle 44"/>
+    <g id="Layer">
+        <g id="ic-actions1-04">
+            <path id="Path_98" d="M20 1H4a3 3 0 0 0-3 3v16a3 3 0 0 0 3 3h16a3 3 0 0 0 3-3V4a3 3 0 0 0-3-3zm1 19a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h16a1 1 0 0 1 1 1z" class="cls-2" data-name="Path 98"/>
+            <path id="Path_99" d="M16.94 8.27l-6.67 6.3-2.61-2.26a1 1 0 0 0-1.33 1.5l3 2.68a1.19 1.19 0 0 0 1.67.1l7.33-6.86a1 1 0 0 0-1.37-1.46z" class="cls-2" data-name="Path 99"/>
+        </g>
+    </g>
+</svg>

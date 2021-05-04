@@ -1,0 +1,176 @@
+.home-title {
+    font-size: 45px;
+    font-weight: 400;
+    line-height: 1.3;
+}
+
+@media (max-width: 1279px) {
+    .home-title {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 1023px) {
+    .home-title {
+        font-size: 30px;
+    }
+}
+
+.home-hero_content h2 {
+    font-size: 55px;
+    font-weight: 400;
+    line-height: 1.3;
+}
+
+.home-hero_content p {
+    font-size: 19px;
+    font-weight: 300;
+}
+
+.home-hero_content .btn {
+    width: 220px;
+    height: 60px;
+    font-size: 15px;
+    transition: all 0.2s ease-in-out;
+}
+
+.home-hero_content .btn:hover {
+    opacity: 0.9;
+}
+
+.home-hero_content .btn-trial {
+    background: #4353ff;
+    color: #fff;
+}
+
+.home-hero_content .btn-buy {
+    background: #dbdcf1;
+    color: #4353ff;
+}
+
+.home-hero_content .btn .arrow {
+    width: 60px;
+    height: 60px;
+}
+
+.home-hero_content .btn .arrow img {
+    transition: all 0.2s ease-in-out;
+}
+
+.home-hero_content .btn:hover .arrow img {
+    transform: translateX(3px);
+}
+
+@media (max-width: 1280px) {
+    .home-hero_content h2 {
+        font-size: 45px;
+    }
+    .home-hero_content p {
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .home .home-hero_inner {
+        background-image: url(../images/hero-image.png);
+        background-repeat: no-repeat;
+        background-position: bottom right;
+        background-size: contain;
+    }
+}
+
+@media (max-width: 1023px) {
+    .home-hero_content {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+    .home-hero_content h2 {
+        font-size: 35px;
+    }
+}
+
+@media (max-width: 767px) {
+    .home-hero_content {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+    .home-hero_content h2 {
+        font-size: 30px;
+    }
+    .home-hero_content p {
+        font-size: 18px;
+    }
+
+    .home-hero_content .btn {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+/* home product */
+.products .product {
+    transition: all 0.2 ease-in-out;
+}
+.products .product:hover {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.products .product .icon img {
+    display: block;
+    height: 35px;
+}
+
+/* end home product */
+
+/* partners */
+.partners {
+    background: var(--main-color);
+}
+.partners .partner img {
+    display: inline-block;
+    max-height: 40px;
+}
+
+/* statistical */
+.statistical-title {
+    color: var(--main-color);
+}
+
+.statistical-item-title {
+    color: #595959;
+}
+
+.testimonial-item__user {
+    position: relative;
+    padding-left: 30px;
+}
+
+.testimonial-item__user::before {
+    content: '';
+    display: inline-block;
+    height: 2px;
+    width: 20px;
+    background: #707070;
+    position: absolute;
+    left: 0;
+    top: 10px;
+}
+/* end statistical */
+
+/* home content */
+.home-banner__content:before {
+    content: '';
+    display: block;
+    height: 10px;
+    width: 10px;
+    background: var(--main-color);
+    transform: rotate(45deg);
+    margin-bottom: 15px;
+}
+
+/* news */
+.news-card a:hover {
+    color: var(--main-color);
+}
+/* end news */

@@ -1,0 +1,83 @@
+@height: 60px;
+@color_bg_menu: #073c6f;
+@color_bg_hover: #073c6f;
+
+.sidebar-logo {
+    height: @height;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: @size-space - 5px @size-space;
+    box-shadow: 0 3px 6px 0 rgba(0,0,0,.16);
+}
+
+.menus {
+    padding: 50px 12px 0;
+    .menu {
+        display: block;
+        padding: 10px 12px;
+        color: #fff;
+        transition: all 0.15s ease-in-out;
+
+        .text {
+            margin-left: 10px;
+        }
+
+        &.active {
+            background: @color_bg_menu;
+        }
+        &:hover {
+            background: @color_bg_hover;
+        }
+
+        &.small {
+            text-align: center;
+            padding: 10px 5px;
+            .text {
+                margin: 5px 0 0;
+                display: block;
+                font-size: 12px;
+            }
+        }
+    }
+}
+.nav {
+    &__menu {
+        margin-top: 80px;
+        height: calc(100% - 118px);
+        padding: 0 12px;
+        &.ant-menu-inline-collapsed > .ant-menu-item,
+        &.ant-menu-inline-collapsed > .ant-menu-item-group > .ant-menu-item-group-list > .ant-menu-item, 
+        &.ant-menu-inline-collapsed > .ant-menu-item-group > .ant-menu-item-group-list > .ant-menu-submenu > .ant-menu-submenu-title,
+        &.ant-menu-inline-collapsed > .ant-menu-submenu > .ant-menu-submenu-title {
+            padding: 0 16px;
+        }
+    }
+    &__icon {
+        display: inline-block;
+        width: 18px;
+        height: 18px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+}
+
+.content {
+    &-header {
+        border: 1px solid @color_border;
+        padding: 0 @size-space;
+        height: @height;
+        background: #fff;
+    }
+
+    .header-left,
+    .header-right {
+        height: @height;
+    }
+
+    .header-right {
+        line-height: @height;
+        display: block;
+    }
+}

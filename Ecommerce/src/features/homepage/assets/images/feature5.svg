@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="100" height="80" viewBox="0 0 100 80">
+    <defs>
+        <style>
+            .cls-3{fill:#f53d2d;fill-rule:evenodd}
+        </style>
+    </defs>
+    <g id="Group_2062" data-name="Group 2062" transform="translate(-805 -1614)">
+        <rect id="Rectangle_907" width="70" height="70" fill="#ead9ff" data-name="Rectangle 907" rx="35" transform="translate(835 1614)"/>
+        <g id="ic-actions-check" transform="translate(805 1614)">
+            <path id="Rectangle_31" fill="none" d="M0 0H80V80H0z" data-name="Rectangle 31"/>
+            <g id="Layer" transform="translate(3.333 3.333)">
+                <path id="Path_74" d="M47.021 9.034a3.333 3.333 0 0 1-.233 4.567L22.321 36.5a3.967 3.967 0 0 1-5.533-.333l-10-8.933a3.341 3.341 0 1 1 4.433-5l8.9 7.533 22.267-21a3.333 3.333 0 0 1 4.633.267z" class="cls-3" data-name="Path 74" transform="translate(9.879 15.232)"/>
+                <path id="Path_75" d="M37.667 7.667a30 30 0 1 0 30 30 30 30 0 0 0-30-30zM1 37.667a36.667 36.667 0 1 1 36.667 36.666A36.667 36.667 0 0 1 1 37.667z" class="cls-3" data-name="Path 75" transform="translate(-1 -1)"/>
+            </g>
+        </g>
+    </g>
+</svg>

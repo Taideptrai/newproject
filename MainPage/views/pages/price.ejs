@@ -1,0 +1,565 @@
+<% const urlStoreEncode = encodeURI(process.env.URL_STORE); %> <% const urlAuth
+= process.env.URL_AUTH + '/sign-up'; %> <% const urlInsaFacebook =
+process.env.INSA_FACEBOOK_PAGE; %>
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <%- include('../partials/head'); %>
+
+        <title>Insa - Nền tảng quản lý và bán hàng đa kênh</title>
+    </head>
+    <body>
+        <%- include('../partials/header.ejs') %>
+
+        <main class="main">
+            <div class="container xl:max-w-7xl mx-auto py-10 lg:py-20 px-5">
+                <div>
+                    <div class="flex border-b border-gray-200 py-4">
+                        <div class="flex-1">
+                            <div class="grid grid-cols-3 gap-5">
+                                <div>
+                                    <div class="package-select relative">
+                                        <div
+                                            class="inline-block package-select-label cursor-pointer font-medium"
+                                        >
+                                            Đa kênh
+                                        </div>
+
+                                        <ul
+                                            class="grid package-list absolute -top-full left-0 bg-white border border-gray-200 py-1"
+                                        >
+                                            <li
+                                                class="p-2 hover:bg-blue-700 hover:text-white cursor-pointer"
+                                                data-label="all"
+                                            >
+                                                Tất cả
+                                            </li>
+                                            <li
+                                                class="p-2 hover:bg-blue-700 hover:text-white cursor-pointer"
+                                                data-label="ecom"
+                                            >
+                                                Insa E-Com
+                                            </li>
+                                            <li
+                                                class="p-2 hover:bg-blue-700 hover:text-white cursor-pointer"
+                                                data-label="pos"
+                                            >
+                                                Insa POS
+                                            </li>
+                                            <li
+                                                class="p-2 hover:bg-blue-700 hover:text-white cursor-pointer"
+                                                data-label="web"
+                                            >
+                                                Insa Web
+                                            </li>
+                                            <li
+                                                class="p-2 hover:bg-blue-700 hover:text-white cursor-pointer"
+                                                data-label="social"
+                                            >
+                                                Insa Social
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="font-medium">Theo tháng</div>
+                                <div class="font-medium">Theo năm</div>
+                            </div>
+                        </div>
+
+                        <div class="w-4"></div>
+                    </div>
+
+                    <div class="flex border-b border-gray-200 py-4">
+                        <div class="flex-1">
+                            <div class="grid grid-cols-3 gap-5">
+                                <div></div>
+                                <div>
+                                    <div
+                                        class="inline-block bg-purple-50 text-blue-700 px-10 py-2 font-medium" id="price-month"
+                                    >
+                                        700.000<sup>đ</sup>
+                                    </div>
+                                    <div class="font-light text-sm my-4" id="price-month-describe">
+                                        Thanh toán định kỳ hàng tháng 700.000đ
+                                    </div>
+                                    <p class="font-medium">
+                                        Lorem ipsum dolor sit amet, consectetur
+                                        adipiscing elit, sed do eiusmod tempor
+                                        incididunt ut labore et dolore magna
+                                        aliqua.
+                                    </p>
+                                </div>
+                                <div>
+                                    <div
+                                        class="inline-block bg-purple-50 text-blue-700 px-10 py-2 font-medium" id="price-year"
+                                    >
+                                        6.000.000<sup>đ</sup>
+                                    </div>
+                                    <div class="font-light text-sm my-4" id="price-year-describe">
+                                        Thanh toán định kỳ hàng năm 6.000.000đ
+                                    </div>
+                                    <p class="font-medium">
+                                        Lorem ipsum dolor sit amet, consectetur
+                                        adipiscing elit, sed do eiusmod tempor
+                                        incididunt ut labore et dolore magna
+                                        aliqua.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w-4"></div>
+                    </div>
+
+                    <!-- insa facebook -->
+                    <div class="package social">
+                        <div
+                            class="flex items-center border-b border-gray-200 cursor-pointer"
+                        >
+                            <div class="package-title flex-1 py-4">
+                                <div class="grid grid-cols-3 gap-5">
+                                    <div
+                                        class="flex items-center font-medium text-lg"
+                                    >
+                                        <img
+                                            class="inline-block w-4 h-4 mr-1 icon-plus"
+                                            src="images/plus.svg"
+                                            alt=""
+                                        />
+                                        Insa social
+                                    </div>
+                                    <div>
+                                        <img
+                                            class="inline-block w-6 h-6 mr-1"
+                                            src="images/check.svg"
+                                            alt=""
+                                        />
+                                    </div>
+                                    <div>
+                                        <img
+                                            class="inline-block w-6 h-6 mr-1"
+                                            src="images/check.svg"
+                                            alt=""
+                                        />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="w-4">
+                                <input type="radio" class="service-radio" data-label="social" name="social"/>
+                            </div>
+                        </div>
+
+                        <div class="package-detail border-b border-gray-200">
+                            <div class="flex items-center py-3 bg-gray-100">
+                                <div class="flex-1">
+                                    <div class="grid grid-cols-3 gap-5">
+                                        <div class="px-5">Insa social</div>
+                                        <div>
+                                            <img
+                                                class="inline-block w-4 h-4 mr-1"
+                                                src="images/check.svg"
+                                                alt=""
+                                            />
+                                        </div>
+                                        <div>
+                                            <img
+                                                class="inline-block w-4 h-4 mr-1"
+                                                src="images/check.svg"
+                                                alt=""
+                                            />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="w-4"></div>
+                            </div>
+                            <div class="flex items-center py-3">
+                                <div class="flex-1">
+                                    <div class="grid grid-cols-3 gap-5">
+                                        <div class="px-5">Số thiết bị</div>
+                                        <div>2</div>
+                                        <div>5</div>
+                                    </div>
+                                </div>
+                                <div class="w-4"></div>
+                            </div>
+                            <div class="flex items-center py-3 bg-gray-100">
+                                <div class="flex-1">
+                                    <div class="grid grid-cols-3 gap-5">
+                                        <div class="px-5">Insa social</div>
+                                        <div>
+                                            <img
+                                                class="inline-block w-4 h-4 mr-1"
+                                                src="images/check.svg"
+                                                alt=""
+                                            />
+                                        </div>
+                                        <div>
+                                            <img
+                                                class="inline-block w-4 h-4 mr-1"
+                                                src="images/check.svg"
+                                                alt=""
+                                            />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="w-4"></div>
+                            </div>
+                            <div class="flex items-center py-3">
+                                <div class="flex-1">
+                                    <div class="grid grid-cols-3 gap-5">
+                                        <div class="px-5">Số fanpage</div>
+                                        <div>2</div>
+                                        <div>10</div>
+                                    </div>
+                                </div>
+                                <div class="w-4"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end insa facebook -->
+
+                    <!-- insa web -->
+                    <div class="package web">
+                        <div
+                            class="flex items-center border-b border-gray-200 cursor-pointer"
+                        >
+                            <div class="flex-1 package-title py-4">
+                                <div class="grid grid-cols-3 gap-5">
+                                    <div
+                                        class="flex items-center font-medium text-lg"
+                                    >
+                                        <img
+                                            class="inline-block w-4 h-4 mr-1 icon-plus"
+                                            src="images/plus.svg"
+                                            alt=""
+                                        />
+                                        Insa website
+                                    </div>
+                                    <div>
+                                        <img
+                                            class="inline-block w-6 h-6 mr-1"
+                                            src="images/check.svg"
+                                            alt=""
+                                        />
+                                    </div>
+                                    <div>
+                                        <img
+                                            class="inline-block w-6 h-6 mr-1"
+                                            src="images/check.svg"
+                                            alt=""
+                                        />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="w-4">
+                                <input type="radio" class="service-radio" data-label="web" name="web"/>
+                            </div>
+                        </div>
+
+                        <div class="package-detail border-b border-gray-200">
+                            <div class="flex items-center py-3 bg-gray-100">
+                                <div class="flex-1">
+                                    <div class="grid grid-cols-3 gap-5">
+                                        <div class="px-5">Insa social</div>
+                                        <div>
+                                            <img
+                                                class="inline-block w-4 h-4 mr-1 icon-plus"
+                                                src="images/check.svg"
+                                                alt=""
+                                            />
+                                        </div>
+                                        <div>
+                                            <img
+                                                class="inline-block w-4 h-4 mr-1"
+                                                src="images/check.svg"
+                                                alt=""
+                                            />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="w-4"></div>
+                            </div>
+                            <div class="flex items-center py-3">
+                                <div class="flex-1">
+                                    <div class="grid grid-cols-3 gap-5">
+                                        <div class="px-5">Số thiết bị</div>
+                                        <div>2</div>
+                                        <div>5</div>
+                                    </div>
+                                </div>
+                                <div class="w-4"></div>
+                            </div>
+                            <div class="flex items-center py-3 bg-gray-100">
+                                <div class="flex-1">
+                                    <div class="grid grid-cols-3 gap-5">
+                                        <div class="px-5">Insa social</div>
+                                        <div>
+                                            <img
+                                                class="inline-block w-4 h-4 mr-1"
+                                                src="images/check.svg"
+                                                alt=""
+                                            />
+                                        </div>
+                                        <div>
+                                            <img
+                                                class="inline-block w-4 h-4 mr-1"
+                                                src="images/check.svg"
+                                                alt=""
+                                            />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="w-4"></div>
+                            </div>
+                            <div class="flex items-center py-3">
+                                <div class="flex-1">
+                                    <div class="grid grid-cols-3 gap-5">
+                                        <div class="px-5">Số fanpage</div>
+                                        <div>2</div>
+                                        <div>10</div>
+                                    </div>
+                                </div>
+                                <div class="w-4"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end insa web -->
+
+                    <!-- insa pos -->
+                    <div class="package pos">
+                        <div
+                            class="flex items-center border-b border-gray-200 cursor-pointer"
+                        >
+                            <div class="flex-1 package-title py-4">
+                                <div class="grid grid-cols-3 gap-5">
+                                    <div
+                                        class="flex items-center font-medium text-lg"
+                                    >
+                                        <img
+                                            class="inline-block w-4 h-4 mr-1 icon-plus"
+                                            src="images/plus.svg"
+                                            alt=""
+                                        />
+                                        Insa pos
+                                    </div>
+                                    <div>
+                                        <img
+                                            class="inline-block w-6 h-6 mr-1"
+                                            src="images/check.svg"
+                                            alt=""
+                                        />
+                                    </div>
+                                    <div>
+                                        <img
+                                            class="inline-block w-6 h-6 mr-1"
+                                            src="images/check.svg"
+                                            alt=""
+                                        />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="w-4">
+                                <input type="radio" class="service-radio" data-label="pos"  name="pos"/>
+                            </div>
+                        </div>
+
+                        <div class="package-detail border-b border-gray-200">
+                            <div class="flex items-center py-3 bg-gray-100">
+                                <div class="flex-1">
+                                    <div class="grid grid-cols-3 gap-5">
+                                        <div class="px-5">Insa social</div>
+                                        <div>
+                                            <img
+                                                class="inline-block w-4 h-4 mr-1 icon-plus"
+                                                src="images/check.svg"
+                                                alt=""
+                                            />
+                                        </div>
+                                        <div>
+                                            <img
+                                                class="inline-block w-4 h-4 mr-1"
+                                                src="images/check.svg"
+                                                alt=""
+                                            />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="w-4"></div>
+                            </div>
+                            <div class="flex items-center py-3">
+                                <div class="flex-1">
+                                    <div class="grid grid-cols-3 gap-5">
+                                        <div class="px-5">Số thiết bị</div>
+                                        <div>2</div>
+                                        <div>5</div>
+                                    </div>
+                                </div>
+                                <div class="w-4"></div>
+                            </div>
+                            <div class="flex items-center py-3 bg-gray-100">
+                                <div class="flex-1">
+                                    <div class="grid grid-cols-3 gap-5">
+                                        <div class="px-5">Insa social</div>
+                                        <div>
+                                            <img
+                                                class="inline-block w-4 h-4 mr-1"
+                                                src="images/check.svg"
+                                                alt=""
+                                            />
+                                        </div>
+                                        <div>
+                                            <img
+                                                class="inline-block w-4 h-4 mr-1"
+                                                src="images/check.svg"
+                                                alt=""
+                                            />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="w-4"></div>
+                            </div>
+                            <div class="flex items-center py-3">
+                                <div class="flex-1">
+                                    <div class="grid grid-cols-3 gap-5">
+                                        <div class="px-5">Số fanpage</div>
+                                        <div>2</div>
+                                        <div>10</div>
+                                    </div>
+                                </div>
+                                <div class="w-4"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end insa pos -->
+
+                    <!-- insa shopee -->
+                    <div class="package ecom">
+                        <div
+                            class="flex items-center border-b border-gray-200 cursor-pointer"
+                        >
+                            <div class="package-title py-4 flex-1">
+                                <div class="grid grid-cols-3 gap-5">
+                                    <div
+                                        class="flex items-center font-medium text-lg"
+                                    >
+                                        <img
+                                            class="inline-block w-4 h-4 mr-1 icon-plus"
+                                            src="images/plus.svg"
+                                            alt=""
+                                        />
+                                        Insa Shopee
+                                    </div>
+                                    <div>
+                                        <img
+                                            class="inline-block w-6 h-6 mr-1"
+                                            src="images/check.svg"
+                                            alt=""
+                                        />
+                                    </div>
+                                    <div>
+                                        <img
+                                            class="inline-block w-6 h-6 mr-1"
+                                            src="images/check.svg"
+                                            alt=""
+                                        />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="w-4">
+                                <input type="radio" class="service-radio" data-label="ecom"  name="ecom"/>
+                            </div>
+                        </div>
+
+                        <div class="package-detail border-b border-gray-200">
+                            <div class="flex items-center py-3 bg-gray-100">
+                                <div class="flex-1">
+                                    <div class="grid grid-cols-3 gap-5">
+                                        <div class="px-5">Insa social</div>
+                                        <div>
+                                            <img
+                                                class="inline-block w-4 h-4 mr-1"
+                                                src="images/check.svg"
+                                                alt=""
+                                            />
+                                        </div>
+                                        <div>
+                                            <img
+                                                class="inline-block w-4 h-4 mr-1"
+                                                src="images/check.svg"
+                                                alt=""
+                                            />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="w-4"></div>
+                            </div>
+                            <div class="flex items-center py-3">
+                                <div class="flex-1">
+                                    <div class="grid grid-cols-3 gap-5">
+                                        <div class="px-5">Số thiết bị</div>
+                                        <div>2</div>
+                                        <div>5</div>
+                                    </div>
+                                </div>
+                                <div class="w-4"></div>
+                            </div>
+                            <div class="flex items-center py-3 bg-gray-100">
+                                <div class="flex-1">
+                                    <div class="grid grid-cols-3 gap-5">
+                                        <div class="px-5">Insa social</div>
+                                        <div>
+                                            <img
+                                                class="inline-block w-4 h-4 mr-1"
+                                                src="images/check.svg"
+                                                alt=""
+                                            />
+                                        </div>
+                                        <div>
+                                            <img
+                                                class="inline-block w-4 h-4 mr-1"
+                                                src="images/check.svg"
+                                                alt=""
+                                            />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="w-4"></div>
+                            </div>
+                            <div class="flex items-center py-3">
+                                <div class="flex-1">
+                                    <div class="grid grid-cols-3 gap-5">
+                                        <div class="px-5">Số fanpage</div>
+                                        <div>2</div>
+                                        <div>10</div>
+                                    </div>
+                                </div>
+                                <div class="w-4"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end insa shopee -->
+
+                    <div class="grid grid-cols-3 py-4 gap-5 bg-gray-200">
+                        <div class="px-4 flex items-center font-medium">
+                            Thành tiền
+                        </div>
+                        <div>
+                            <button class="py-2 px-10 lg:px-20 text-white btn">
+                                Mua ngay
+                            </button>
+                        </div>
+                        <div>
+                            <button class="py-2 px-10 lg:px-20 text-white btn">
+                                Mua ngay
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- footer -->
+        <%- include('../partials/footer.ejs') %>
+        <script src="/js/price.js"></script>
+    </body>
+</html>

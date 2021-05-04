@@ -1,0 +1,57 @@
+.dashboard-card-summary {
+    min-width: 178px;
+    height: 100%;
+    position: relative;
+    background-color: #ffffff;
+    border-radius: 2px;
+    border: solid 1px #dee5e7;
+    .ant-divider-horizontal {
+        background-color: #e1e2f6;
+        width: calc(100% - 32px);
+        margin-left: 16px;
+        max-width: calc(100% - 32px);
+        min-width: calc(100% - 32px);
+    }
+    &.yellow {
+        background-color: #fffcf6;
+        .ant-divider-horizontal {
+            background-color: #fcdbb6;
+        }
+    }
+    &.blue {
+        .ant-divider-horizontal {
+            background-color: #c8ebee;
+        }
+        background-color: #fbffff;
+    }
+    .title {
+        font-size: 36px;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.19;
+        letter-spacing: 0.58px;
+        text-align: left;
+        color: #40484e;
+        margin-bottom: 0;
+        padding-top: 178px;
+        text-align: center;
+    }
+    .text {
+        text-align: center;
+        width: 100%;
+        display: block;
+        padding-bottom: 34px;
+    }
+    img {
+        position: absolute;
+        top: 26px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+.dashboard-card-chart {
+    .ant-card-head-title {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+}

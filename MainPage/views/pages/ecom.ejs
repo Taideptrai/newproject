@@ -1,0 +1,241 @@
+<% const urlStoreEncode=encodeURI(process.env.URL_STORE); %> <% const
+urlAuth=process.env.URL_AUTH + '/sign-up' ; %>
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <%- include('../partials/head'); %>
+
+        <title>Insa - Nền tảng quản lý và bán hàng đa kênh</title>
+    </head>
+
+    <body class="ecom">
+        <%- include('../partials/header.ejs') %>
+        <main class="main">
+            <!-- home hero -->
+            <div class="home-hero padding-header bg-gray-100">
+                <div class="home-hero_inner">
+                    <div class="container xl:max-w-7xl mx-auto px-5">
+                        <div class="flex py-4 lg:py-20">
+                            <div class="md:w-4/6 flex items-center">
+                                <div
+                                    class="home-hero_content text-center md:text-left"
+                                >
+                                    <h2>
+                                        Một website chuyên nghiệp sẽ giúp ích
+                                        cho công việc kinh doanh như thế nào?
+                                    </h2>
+                                    <div class="grid my-6 gap-2">
+                                        <p>
+                                            Bán hàng trên các trang thương mại
+                                            điện tử là hình thức kinh doanh mang
+                                            lại nhiều cơ hội và lợi nhuận, nhất
+                                            là khi người tiêu dùng có xu hướng
+                                            mua sắm online nhiều hơn. Hãy để
+                                            INSA E-COM giúp bạn kinh doanh hiệu
+                                            quả và đạt mục tiêu doanh số một
+                                            cách dễ dàng hơn.
+                                        </p>
+                                    </div>
+
+                                    <div class="block md:flex">
+                                        <a
+                                            href="<%= urlAuth %>"
+                                            class="btn btn-trial block mb-2 md:mb-0 md:mr-5"
+                                        >
+                                            <div class="flex items-center">
+                                                <span
+                                                    class="inline-block text-left flex-1 px-5"
+                                                >
+                                                    <b class="font-medium"
+                                                        >Dùng thử</b
+                                                    ><br />
+                                                    <span class="font-light"
+                                                        >Miễn phí 30 ngày</span
+                                                    >
+                                                </span>
+                                                <span
+                                                    class="arrow flex items-center justify-center border-l border-gray-300"
+                                                >
+                                                    <img
+                                                        src="images/arrow-light.png"
+                                                        alt=""
+                                                    />
+                                                </span>
+                                            </div>
+                                        </a>
+
+                                        <a
+                                            href="<%= urlAuth %>"
+                                            class="btn btn-buy block"
+                                        >
+                                            <div
+                                                class="flex items-center text-center"
+                                            >
+                                                <span
+                                                    class="inline-block flex-1 px-5"
+                                                >
+                                                    <b class="font-semibold"
+                                                        >Mua ngay</b
+                                                    >
+                                                </span>
+                                                <span
+                                                    class="arrow flex items-center justify-center border-l border-gray-100"
+                                                >
+                                                    <img
+                                                        src="images/arrow-blue.png"
+                                                        alt=""
+                                                    />
+                                                </span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end home hero  -->
+
+            <div class="py-16">
+                <div class="container xl:max-w-7xl mx-auto px-5">
+                    <div class="home-title">
+                        <span>Insa Shopee</span>
+                    </div>
+                </div>
+
+                <div class="py-20">
+                    <div class="container xl:max-w-7xl mx-auto px-5">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-20">
+                            <div>
+                                <div class="max-w-lg">
+                                    <h3 class="text-2xl lg:text-3xl">
+                                        Nghiên cứu thị trường
+                                    </h3>
+                                    <p class="font-light text-gray-600 my-4">
+                                        Tổng hợp sản phẩm, gian hàng nổi bật,
+                                        giúp bạn nghiên cứu thị trường, đối thủ
+                                        dễ dàng và xây dựng định hướng cho gian
+                                        hàng của mình.
+                                    </p>
+                                    <img
+                                        class="block w-full mx-auto"
+                                        src="images/ecom1.jpg"
+                                        alt="Quản lý nhiều trang cùng lúc"
+                                    />
+                                </div>
+                            </div>
+                            <div>
+                                <div class="max-w-lg md:mt-20">
+                                    <h3 class="text-2xl lg:text-3xl">
+                                        Đồng bộ sản phẩm
+                                    </h3>
+                                    <p class="font-light text-gray-600 my-4">
+                                        Dễ dàng kéo thả, sao chép, thay đổi
+                                        thông tin sản phẩm, quản lý kho hàng
+                                        chính xác và đẩy sản phẩm lên top tự
+                                        động trên gian hàng.
+                                    </p>
+                                    <img
+                                        class="block w-full mx-auto"
+                                        src="images/ecom2.jpg"
+                                        alt="Quản lý nhiều trang cùng lúc"
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-gray-100 py-20">
+                    <div class="container xl:max-w-7xl mx-auto px-5">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-20">
+                            <div>
+                                <div class="max-w-lg">
+                                    <h3 class="text-2xl lg:text-3xl">
+                                        Đồng bộ đơn hàng
+                                    </h3>
+                                    <p class="font-light text-gray-600 my-4">
+                                        Quản lý nhiều shop cùng lúc mà không cần
+                                        chuyển tài khoản, hỗ trợ tạo đơn hàng,
+                                        kiểm soát đơn hàng toàn
+                                    </p>
+                                    <img
+                                        class="block w-full mx-auto"
+                                        src="images/ecom3.jpg"
+                                        alt="Quản lý nhiều trang cùng lúc"
+                                    />
+                                </div>
+                            </div>
+                            <div>
+                                <div class="max-w-lg md:mt-20">
+                                    <h3 class="text-2xl lg:text-3xl">
+                                        Lưu trữ thông tin khách hàng
+                                    </h3>
+                                    <p class="font-light text-gray-600 my-4">
+                                        Lưu thông tin khách hàng ngay tại khung
+                                        chat, gắn thẻ và phân luồng để chăm sóc
+                                        khách hàng một cách hiệu quả.
+                                    </p>
+                                    <img
+                                        class="block w-full mx-auto"
+                                        src="images/ecom4.jpg"
+                                        alt="Quản lý nhiều trang cùng lúc"
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="py-20 border-b border-gray-200">
+                    <div class="container xl:max-w-7xl mx-auto px-5">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-20">
+                            <div>
+                                <div class="max-w-lg">
+                                    <h3 class="text-2xl lg:text-3xl">
+                                        Gửi tin nhắn marketing
+                                    </h3>
+                                    <p class="font-light text-gray-600 my-4">
+                                        Dễ dàng tạo, phân loại và lưu tệp khách
+                                        hàng, gửi tin nhắn marketing tự động
+                                        theo từng danh sách khách hàng.
+                                    </p>
+                                    <img
+                                        class="block w-full mx-auto"
+                                        src="images/ecom5.jpg"
+                                        alt="Quản lý nhiều trang cùng lúc"
+                                    />
+                                </div>
+                            </div>
+                            <div>
+                                <div class="max-w-lg md:mt-20">
+                                    <h3 class="text-2xl lg:text-3xl">
+                                        Báo cáo chi tiết
+                                    </h3>
+                                    <p class="font-light text-gray-600 my-4">
+                                        Tổng hợp đầy đủ lượt tương tác, số lượng
+                                        đơn hàng, doanh thu theo thời gian để
+                                        cải thiện hiệu quả kinh doanh.
+                                    </p>
+                                    <img
+                                        class="block w-full mx-auto"
+                                        src="images/ecom6.jpg"
+                                        alt="Quản lý nhiều trang cùng lúc"
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- question -->
+                <%- include('../partials/question.ejs') %>
+            </div>
+        </main>
+
+        <!-- footer -->
+        <%- include('../partials/footer.ejs') %>
+    </body>
+</html>

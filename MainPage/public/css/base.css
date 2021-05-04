@@ -1,0 +1,127 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--main-bg-color);
+}
+
+.padding-header {
+    padding-top: 100px;
+}
+
+/* image */
+.img img {
+    display: inline-block;
+    max-width: 100%;
+}
+
+/* block */
+.block {
+    display: block;
+    width: 100%;
+}
+
+/* block */
+.block {
+    display: block;
+    width: 100%;
+}
+
+/* button */
+button:focus {
+    outline: none;
+}
+
+.btn {
+    display: inline-block;
+    height: var(--btn-size-md);
+    line-height: var(--btn-size-md);
+    border-radius: var(--border-radius);
+    padding: 0 var(--main-padding);
+    cursor: pointer;
+    border: none;
+    transition: all 0.15s ease;
+    border-radius: 4px;
+    text-decoration: none !important;
+}
+
+.btn-corners {
+    border-radius: 14px;
+}
+
+.btn-default {
+    background-color: #f9fafe;
+    color: var(--main-color);
+}
+
+.btn-default:hover {
+    background-color: var(--main-color);
+    color: #f9fafe;
+}
+
+.btn-primary {
+    background: var(--main-color);
+    color: #fff;
+}
+
+.btn-primary:hover {
+    background: var(--main-color-light);
+    color: #fff;
+}
+
+.btn-outline-primary {
+    border: 2px solid var(--main-color);
+    background: transparent;
+}
+
+.btn-outline-primary:hover {
+    border-color: var(--main-color-light);
+    background: var(--main-color-light);
+    color: #fff;
+}
+
+.btn-more {
+    font-size: 14px;
+    background: #fff;
+    height: 38px;
+    line-height: 1;
+    border-radius: 19px;
+    border: solid 0.5px #0872d7;
+    color: #0872d7;
+    padding-left: calc(var(--main-padding) + 5px);
+    padding-right: calc(var(--main-padding) + 5px);
+}
+
+.btn-more:hover {
+    background: #eee;
+}
+
+.btn-more:after {
+    content: '';
+    display: inline-block;
+    height: 10px;
+    width: 15px;
+    margin-left: 5px;
+    background: url('/images/arrow.svg') no-repeat center;
+}
+
+/* input */
+input {
+    border: none;
+    padding: 0 var(--main-padding);
+    height: var(--input-size-md);
+    border-radius: var(--border-radius);
+}
+
+/* view more */
+.view-more {
+    color: var(--main-color);
+    font-size: 14px;
+}
+
+/* view more */
+.view-more {
+    color: var(--main-color);
+    font-size: 14px;
+}

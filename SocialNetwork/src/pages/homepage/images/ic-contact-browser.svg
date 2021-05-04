@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="ic-contact-browser" width="38" height="38" viewBox="0 0 38 38">
+    <defs>
+        <style>
+            .cls-2{fill:#4aa0f2}
+        </style>
+    </defs>
+    <path id="Rectangle_83" fill="none" d="M0 0H38V38H0z" data-name="Rectangle 83"/>
+    <g id="Layer" transform="translate(1.583 1.583)">
+        <g id="Vrstva_150" data-name="Vrstva 150">
+            <path id="Path_154" d="M31.083 1H5.75A4.75 4.75 0 0 0 1 5.75v25.333a4.75 4.75 0 0 0 4.75 4.75h25.333a4.75 4.75 0 0 0 4.75-4.75V5.75A4.75 4.75 0 0 0 31.083 1zM5.75 4.167h25.333a1.583 1.583 0 0 1 1.584 1.583v4.75h-28.5V5.75A1.583 1.583 0 0 1 5.75 4.167zm25.333 28.5H5.75a1.583 1.583 0 0 1-1.583-1.583V13.667h28.5v17.416a1.583 1.583 0 0 1-1.584 1.584z" class="cls-2" data-name="Path 154" transform="translate(-1 -1)"/>
+            <rect id="Rectangle_7" width="3.304" height="2.478" class="cls-2" data-name="Rectangle 7" rx=".2" transform="translate(5.025 5.025)"/>
+            <rect id="Rectangle_8" width="3.304" height="2.478" class="cls-2" data-name="Rectangle 8" rx=".2" transform="translate(9.156 5.025)"/>
+            <rect id="Rectangle_9" width="3.304" height="2.478" class="cls-2" data-name="Rectangle 9" rx=".2" transform="translate(14.112 5.025)"/>
+        </g>
+    </g>
+</svg>

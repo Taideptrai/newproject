@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+@import './var.css';
+@import './ui.css';
+@import './typo.css';
+@import './slick.css';
+@import './header.css';
+@import './footer.css';
+@import './home.css';
+@import './web.css';
+@import './ecom.css';
+@import './social.css';
+@import './detail.css';
+@import './price.css';
+
+.question-title {
+    position: relative;
+    padding-right: 30;
+}
+
+.question-title-arrow {
+    display: block;
+    height: 12px;
+    width: 12px;
+    position: absolute;
+    top: 50%;
+    margin-top: -6px;
+    right: 0;
+}
+
+.question-title-arrow::after,
+.question-title-arrow::before {
+    content: '';
+    display: block;
+    height: 12px;
+    width: 2px;
+    background-color: #000;
+    position: absolute;
+    top: 0;
+    left: 50%;
+}
+
+.question-title-arrow::after {
+    transform: rotate(90deg);
+}
+
+.btn {
+    background: var(--main-color);
+    transition: all 0.2s ease-in-out;
+}
+
+.btn:hover {
+    opacity: 0.9;
+}

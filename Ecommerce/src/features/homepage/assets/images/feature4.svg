@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="107" height="90" viewBox="0 0 107 90">
+    <defs>
+        <style>
+            .cls-3{fill:#f53d2d;fill-rule:evenodd}
+        </style>
+    </defs>
+    <g id="Group_2063" data-name="Group 2063" transform="translate(-398 -1614)">
+        <path id="Subtraction_20" fill="#d6f8ff" d="M70 0H0a69.534 69.534 0 0 0 5.5 27.25 69.745 69.745 0 0 0 15 22.25 69.578 69.578 0 0 0 22.256 15A69.457 69.457 0 0 0 70 70V0z" data-name="Subtraction 20" transform="rotate(180 252.5 842)"/>
+        <g id="ic-actions-emultiple-edit" transform="translate(398 1624)">
+            <path id="Rectangle_39" fill="none" d="M0 0H80V80H0z" data-name="Rectangle 39"/>
+            <g id="Layer" transform="translate(6.139 3.333)">
+                <g id="ic-actions1-02">
+                    <path id="Path_88" d="M61.84 34.667A3.333 3.333 0 0 0 58.507 38v16.333a3.333 3.333 0 0 1-3.333 3.333H21.84a3.333 3.333 0 0 1-3.333-3.333V11a3.333 3.333 0 0 1 3.333-3.333h16.667a3.333 3.333 0 0 0 0-6.667H21.84a10 10 0 0 0-9.467 6.667h-.533a10 10 0 0 0-10 10v46.666a10 10 0 0 0 10 10h33.333a10 10 0 0 0 10-10 10 10 0 0 0 10-10V38a3.333 3.333 0 0 0-3.333-3.333zm-16.667 33H11.84a3.333 3.333 0 0 1-3.333-3.333V17.667a3.333 3.333 0 0 1 3.333-3.333v40a10 10 0 0 0 10 10h26.667a3.333 3.333 0 0 1-3.334 3.333z" class="cls-3" data-name="Path 88" transform="translate(-1.84 -1)"/>
+                    <path id="Path_89" d="M46.653 7.659l-4.7-4.7a6.667 6.667 0 0 0-9.433 0l-21.7 21.666.467 13.667 13.7.467 21.666-21.667a6.667 6.667 0 0 0 0-9.433zm-5.9 5.9L22.32 32.025l-4.567-.167-.167-4.567L36.053 8.825a1.9 1.9 0 0 1 .533-.367h1.467a1.767 1.767 0 0 1 .333.2l2.333 2.367a1.667 1.667 0 0 1 .033 2.533z" class="cls-3" data-name="Path 89" transform="translate(19.113 -.992)"/>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

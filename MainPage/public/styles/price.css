@@ -1,0 +1,35 @@
+.package-title.active .icon-plus {
+    transition: all 0.2s ease-in-out;
+}
+
+.package-title.active .icon-plus {
+    transform: rotate(45deg);
+}
+
+.package-select-label {
+    color: var(--main-color);
+}
+
+.package-select-label::after {
+    content: '';
+    display: inline-block;
+    height: 6px;
+    width: 6px;
+    margin-left: 5px;
+    border-width: 3px;
+    border-color: transparent var(--main-color) var(--main-color) transparent;
+    transform: rotate(45deg) translateY(-5px);
+}
+
+.package-list {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+    transition: all 0.3s ease-in-out;
+}
+
+.package-list.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}

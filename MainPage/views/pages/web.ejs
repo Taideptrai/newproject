@@ -1,0 +1,246 @@
+<% const urlStoreEncode=encodeURI(process.env.URL_STORE); %> <% const
+urlAuth=process.env.URL_AUTH + '/sign-up' ; %>
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <%- include('../partials/head'); %>
+
+        <title>Insa - Nền tảng quản lý và bán hàng đa kênh</title>
+    </head>
+
+    <body class="website">
+        <%- include('../partials/header.ejs') %>
+        <main class="main">
+            <!-- home hero -->
+            <div class="home-hero padding-header bg-gray-100">
+                <div class="home-hero_inner">
+                    <div class="container xl:max-w-7xl mx-auto px-5">
+                        <div class="flex py-4 lg:py-20">
+                            <div class="md:w-4/6 flex items-center">
+                                <div
+                                    class="home-hero_content text-center md:text-left"
+                                >
+                                    <h2>
+                                        Một website chuyên nghiệp sẽ giúp ích
+                                        cho công việc kinh doanh như thế nào?
+                                    </h2>
+                                    <div class="grid gap-2 my-6">
+                                        <p>
+                                            - Kết nối với khách hàng ở bất cứ
+                                            đâu.
+                                        </p>
+                                        <p>
+                                            - Giới thiệu sản phẩm, dịch vụ dễ
+                                            dàng.
+                                        </p>
+
+                                        <p>
+                                            - Quản lý doanh thu bán hàng online
+                                            hiệu quả
+                                        </p>
+                                        <p>
+                                            - Tăng sự uy tín của thương hiệu,
+                                            doanh nghiệp.
+                                        </p>
+                                        <p>
+                                            - Hỗ trợ phát triển thương hiệu bền
+                                            vững.
+                                        </p>
+                                    </div>
+
+                                    <div class="block md:flex">
+                                        <a
+                                            href="<%= urlAuth %>"
+                                            class="btn btn-trial block mb-2 md:mb-0 md:mr-5"
+                                        >
+                                            <div class="flex items-center">
+                                                <span
+                                                    class="inline-block text-left flex-1 px-5"
+                                                >
+                                                    <b class="font-medium"
+                                                        >Dùng thử</b
+                                                    ><br />
+                                                    <span class="font-light"
+                                                        >Miễn phí 30 ngày</span
+                                                    >
+                                                </span>
+                                                <span
+                                                    class="arrow flex items-center justify-center border-l border-gray-300"
+                                                >
+                                                    <img
+                                                        src="images/arrow-light.png"
+                                                        alt=""
+                                                    />
+                                                </span>
+                                            </div>
+                                        </a>
+
+                                        <a
+                                            href="<%= urlAuth %>"
+                                            class="btn btn-buy block"
+                                        >
+                                            <div
+                                                class="flex items-center text-center"
+                                            >
+                                                <span
+                                                    class="inline-block flex-1 px-5"
+                                                >
+                                                    <b class="font-semibold"
+                                                        >Mua ngay</b
+                                                    >
+                                                </span>
+                                                <span
+                                                    class="arrow flex items-center justify-center border-l border-gray-100"
+                                                >
+                                                    <img
+                                                        src="images/arrow-blue.png"
+                                                        alt=""
+                                                    />
+                                                </span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end home hero  -->
+
+            <div class="py-16">
+                <div class="container xl:max-w-7xl mx-auto px-5">
+                    <div class="home-title">
+                        <span> Insa Web</span>
+                    </div>
+                </div>
+
+                <div class="py-20">
+                    <div class="container xl:max-w-7xl mx-auto px-5">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-20">
+                            <div>
+                                <div class="max-w-lg">
+                                    <h3 class="text-3xl">
+                                        Giao diện thân thiện
+                                    </h3>
+                                    <p class="font-light text-gray-600 my-4">
+                                        Giao diện được thiết kế để tối ưu trải
+                                        nghiệm khách hàng, nâng cao tỉ lệ mua
+                                        hàng mà vẫn đáp ứng được tính thẩm mỹ.
+                                    </p>
+
+                                    <img
+                                        class="block w-full mx-auto"
+                                        src="images/web1.jpg"
+                                        alt=" Giao diện thân thiện"
+                                    />
+                                </div>
+                            </div>
+                            <div>
+                                <div class="max-w-lg md:mt-20">
+                                    <h3 class="text-3xl">Tích hợp đa dạng</h3>
+                                    <p class="font-light text-gray-600 my-4">
+                                        Website được tích hợp sẵn cổng thanh
+                                        toán, cổng vận chuyển, phần mềm quản lý
+                                        bán hàng, thuận tiện cho cả người bán và
+                                        người mua.
+                                    </p>
+                                    <img
+                                        class="block w-full mx-auto"
+                                        src="images/web2.jpg"
+                                        alt="Quản lý nhiều trang cùng lúc"
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-gray-100 py-20">
+                    <div class="container xl:max-w-7xl mx-auto px-5">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-20">
+                            <div>
+                                <div class="max-w-lg">
+                                    <h3 class="text-3xl">Dễ dàng sử dụng</h3>
+                                    <p class="font-light text-gray-600 my-4">
+                                        Không giới hạn băng thông, dung lượng,
+                                        trình quản lý dễ sử dụng, nhà bán hàng
+                                        có thể tùy biến website linh hoạt.
+                                    </p>
+                                    <img
+                                        class="block w-full mx-auto"
+                                        src="images/web3.jpg"
+                                        alt="Quản lý nhiều trang cùng lúc"
+                                    />
+                                </div>
+                            </div>
+                            <div>
+                                <div class="max-w-lg md:mt-20">
+                                    <h3 class="text-3xl">Quản lý sản phẩm</h3>
+                                    <p class="font-light text-gray-600 my-4">
+                                        Hỗ trợ SMS, email marketing, liên kết
+                                        với Google Analytics, Google Shopping,
+                                        Web Master, Facebook Pixel đo lường hiệu
+                                        quả.ng, gửi tin nhắn hàng loạt.
+                                    </p>
+                                    <img
+                                        class="block w-full mx-auto"
+                                        src="images/web4.jpg"
+                                        alt="Quản lý nhiều trang cùng lúc"
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="py-20">
+                    <div class="container xl:max-w-7xl mx-auto px-5">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-20">
+                            <div>
+                                <div class="max-w-lg">
+                                    <h3 class="text-3xl">Đảm bảo chuẩn SEO</h3>
+                                    <p class="font-light text-gray-600 my-4">
+                                        Tối ưu cấu trúc và dữ liệu, giúp website
+                                        dễ dàng được tìm thấy trên các công cụ
+                                        tìm kiếm như Google, thu hút thêm lượt
+                                        truy cập.
+                                    </p>
+                                    <img
+                                        class="block max-w-full mx-auto"
+                                        src="images/web5.jpg"
+                                        alt="Quản lý nhiều trang cùng lúc"
+                                    />
+                                </div>
+                            </div>
+                            <div>
+                                <div class="max-w-lg md:mt-20">
+                                    <h3 class="text-3xl">
+                                        Bảo mật an toán, đa ngôn ngữ
+                                    </h3>
+                                    <p class="font-light text-gray-600 my-4">
+                                        Cung cấp chứng chỉ SSL, mã hóa dữ liệu,
+                                        chống hack, hỗ trợ cài đặt nhiều ngôn
+                                        ngữ và dịch nội dung tự động.
+                                    </p>
+                                    <img
+                                        class="block max-w-full mx-auto"
+                                        src="images/web6.jpg"
+                                        alt="Quản lý nhiều trang cùng lúc"
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- question -->
+                <%- include('../partials/question.ejs') %>
+            </div>
+        </main>
+
+        <!-- footer -->
+        <%- include('../partials/footer.ejs') %>
+    </body>
+</html>

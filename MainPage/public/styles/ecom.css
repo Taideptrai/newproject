@@ -1,0 +1,8 @@
+@media (min-width: 768px) {
+    .ecom .home-hero {
+        background-image: url(../images/ecom-hero.png);
+        background-position: top right;
+        background-repeat: no-repeat;
+        background-size: auto 100%;
+    }
+}

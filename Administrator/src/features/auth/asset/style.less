@@ -1,0 +1,29 @@
+.auth {
+    &-layout {
+        background: @color_light;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &-content {
+        width: 95%;
+        margin: auto;
+        max-width: 360px;
+        .logo {
+            text-align: center;
+            margin-bottom: @size-space * 2;
+        }
+    }
+
+    &-heading {
+        margin-bottom: 30px;
+        text-align: center;
+
+        &-title {
+            font-size: 25px;
+        }
+    }
+}

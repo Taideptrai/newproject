@@ -1,0 +1,536 @@
+<% const urlStoreEncode=encodeURI(process.env.URL_STORE); %> <% const
+urlAuth=process.env.URL_AUTH + '/sign-up' ; %>
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <%- include('../partials/head'); %>
+
+        <title>Insa - Nền tảng quản lý và bán hàng đa kênh</title>
+    </head>
+
+    <body class="home">
+        <%- include('../partials/header.ejs') %>
+        <main class="main">
+            <!-- home hero -->
+            <div class="home-hero padding-header bg-gray-100">
+                <div class="home-hero_inner">
+                    <div class="container xl:max-w-7xl mx-auto px-5">
+                        <div class="row flex">
+                            <div class="col-md-6 flex-1 flex items-center">
+                                <div
+                                    class="home-hero_content text-center md:text-left"
+                                >
+                                    <h2>
+                                        Nền tảng quản lý và<br
+                                            class="hidden md:block"
+                                        />
+                                        bán hàng đa kênh INSA
+                                    </h2>
+                                    <p class="mb-6 mt-3">
+                                        Nền tảng duy nhất mà bạn có thể quản lý
+                                        kinh doanh hiệu quá.<br
+                                            class="hidden md:block"
+                                        />
+                                        Tất cả nằm trong tầm tay với INSA
+                                    </p>
+
+                                    <div class="block md:flex">
+                                        <a
+                                            href="<%= urlAuth %>"
+                                            class="btn btn-trial block mb-2 md:mb-0 md:mr-5"
+                                        >
+                                            <div class="flex items-center">
+                                                <span
+                                                    class="inline-block text-left flex-1 px-5"
+                                                >
+                                                    <b class="font-medium"
+                                                        >Dùng thử</b
+                                                    ><br />
+                                                    <span class="font-light"
+                                                        >Miễn phí 30 ngày</span
+                                                    >
+                                                </span>
+                                                <span
+                                                    class="arrow flex items-center justify-center border-l border-gray-300"
+                                                >
+                                                    <img
+                                                        src="images/arrow-light.png"
+                                                        alt=""
+                                                    />
+                                                </span>
+                                            </div>
+                                        </a>
+
+                                        <a
+                                            href="<%= urlAuth %>"
+                                            class="btn btn-buy block"
+                                        >
+                                            <div
+                                                class="flex items-center text-center"
+                                            >
+                                                <span
+                                                    class="inline-block flex-1 px-5"
+                                                >
+                                                    <b class="font-semibold"
+                                                        >Mua ngay</b
+                                                    >
+                                                </span>
+                                                <span
+                                                    class="arrow flex items-center justify-center border-l border-gray-100"
+                                                >
+                                                    <img
+                                                        src="images/arrow-blue.png"
+                                                        alt=""
+                                                    />
+                                                </span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="hidden lg:block lg:flex-1">
+                                <div
+                                    class="img hidden lg:block lg:transform lg:translate-x-20"
+                                >
+                                    <img
+                                        src="images/hero-image.png"
+                                        alt="Nền tảng quản lý và bán hàng đa kênh"
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end home hero  -->
+
+            <!-- home-product -->
+            <div class="home-section home-product py-20">
+                <div class="container xl:max-w-7xl mx-auto px-5">
+                    <div class="home-title mb-12">
+                        <span> Sản phẩm </span>
+                    </div>
+
+                    <div
+                        class="grid products md:grid-cols-2 lg:grid-cols-3 grid-rows-2 gap-8 xl:gap-10"
+                    >
+                        <a
+                            href="/insa-facebook"
+                            class="block product border border-gray-100 p-6 lg:p-7 xl:p-8"
+                        >
+                            <div class="heading">
+                                <div class="flex items-center">
+                                    <div class="icon mr-5">
+                                        <img
+                                            src="images/insa-facebook-lg.svg"
+                                            alt="Insa facebook - Bán hàng trên mạng xã hội"
+                                        />
+                                    </div>
+                                </div>
+                            </div>
+                            <h5 class="product_title font-medium text-lg my-4">
+                                Bán hàng trên mạng xã hội
+                            </h5>
+                            <p class="product_content font-light">
+                                Chat với khách hàng, gửi tin nhắn tự động, lưu
+                                đơn hàng, thống kê sản phẩm và doanh thu, quản
+                                lý thông tin khách hàng.
+                            </p>
+                        </a>
+                        <a
+                            href="insa-shopee"
+                            class="product border border-gray-100 p-6 lg:p-7 xl:p-8"
+                        >
+                            <div class="heading">
+                                <div class="flex items-center">
+                                    <div class="icon mr-5">
+                                        <img
+                                            src="images/insa-shopee-lg.svg"
+                                            alt="Insa facebook - Bán hàng trên mạng xã hội"
+                                        />
+                                    </div>
+                                </div>
+                            </div>
+                            <h5 class="product_title font-medium text-lg my-4">
+                                Bán hàng trên sàn thương mại
+                            </h5>
+                            <p class="product_content font-light">
+                                Nghiên cứu thị trường và đối thủ dễ dàng, quản
+                                lý sản phẩm, đơn hàng, tin nhắn, khách hàng hiệu
+                                quả, gửi tin nhắn marketing.
+                            </p>
+                        </a>
+
+                        <a
+                            href="insa-website"
+                            class="product border border-gray-100 p-6 lg:p-7 xl:p-8"
+                        >
+                            <div class="heading">
+                                <div class="flex items-center">
+                                    <div class="icon mr-5">
+                                        <img
+                                            src="images/insa-website-lg.svg"
+                                            alt="Insa web - Xây dựng website"
+                                        />
+                                    </div>
+                                </div>
+                            </div>
+                            <h5 class="product_title font-medium text-lg my-4">
+                                Xây dựng website
+                            </h5>
+                            <p class="product_content font-light text-sm">
+                                Sở hữu website bán hàng đầy đủ chức năng, giao
+                                diện tối ưu cho các thiết bị, tốc độ tải nhanh
+                                và chuẩn SEO.
+                            </p>
+                        </a>
+
+                        <a
+                            href="/insa-pos"
+                            class="product border border-gray-100 p-6 lg:p-7 xl:p-8"
+                        >
+                            <div class="heading">
+                                <div class="flex items-center">
+                                    <div class="icon mr-5">
+                                        <img
+                                            src="images/insa-pos-lg.svg"
+                                            alt="Insa pos - Quản lý bán hàng tại điểm bán"
+                                        />
+                                    </div>
+                                </div>
+                            </div>
+                            <h5
+                                class="product_title font-medium text-lg mt-3 mb-4"
+                            >
+                                Quản lý bán hàng tại điểm bán
+                            </h5>
+                            <p class="product_content font-light">
+                                Tính tiền, in hóa đơn, mã vạch, quản lý kho.
+                                khuyến mại, kế toán, khách hàng, nhân viên, báo
+                                cáo
+                            </p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- end home-solution -->
+
+            <!-- home bar -->
+            <div class="partners">
+                <div
+                    class="container xl:max-w-7xl mx-auto text-center lg:px-20"
+                >
+                    <div
+                        class="grid grid-cols-2 py-5 md:py-0 md:grid-cols-4 gap-3 md:gap-10"
+                    >
+                        <div
+                            class="partner px-5 py-1 md:py-10 flex items-center justify-center"
+                        >
+                            <a>
+                                <img
+                                    src="images/gco-logo.svg"
+                                    alt="Gco group"
+                                />
+                            </a>
+                        </div>
+                        <div
+                            class="partner px-5 py-5 md:py-10 flex items-center justify-center"
+                        >
+                            <a>
+                                <img
+                                    src="images/facebook-logo.svg"
+                                    alt="Facebook"
+                                    style="height: 22px"
+                                />
+                            </a>
+                        </div>
+                        <div
+                            class="partner px-5 py-5 md:py-10 flex items-center justify-center"
+                        >
+                            <a>
+                                <img
+                                    src="images/google-logo.svg"
+                                    alt="Google"
+                                    style="height: 30px"
+                                />
+                            </a>
+                        </div>
+                        <div
+                            class="partner px-5 py-5 md:py-10 flex items-center justify-center"
+                        >
+                            <a>
+                                <img
+                                    src="images/shopee-logo.svg"
+                                    alt="Shopee"
+                                />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end home bar -->
+
+            <!-- home story  -->
+            <div class="home-story py-20">
+                <div class="container xl:max-w-7xl mx-auto">
+                    <div class="grid grid-cols-1 md:grid-cols-3">
+                        <div class="p-8">
+                            <div class="font-medium text-sm uppercase mb-3">
+                                Câu chuyện thành công
+                            </div>
+                            <div>
+                                <h3 class="font-medium text-2xl mb-4">
+                                    Hợp tác với SEOplus ngay hôm nay để tăng
+                                    trưởng doanh thu và phát triển thương hiệu
+                                </h3>
+                                <p class="font-light">
+                                    Với đội ngũ chuyên gia SEO gần 10 năm kinh
+                                    nghiệm. Tài nguyên đa dạng, phong phú.
+                                    Phương pháp SEO an toàn, bền vững của chúng
+                                    tôi, website của bạn sẽ nhanh chóng có thứ
+                                    hạng cao trên TOP kết quả tìm kiếm của
+                                    Google. Ngoài ra, chúng tôi sẽ liên tục cải
+                                    thiện tối ưu theo thời gian để năng cao tỷ
+                                    lệ chuyển đổi và mang lại nhiều kết quả hữu
+                                    ích cho doanh nghiệp.
+                                </p>
+                            </div>
+                        </div>
+                        <div
+                            class="p-6 md:border-l md:border-r md:border-gray-100"
+                        >
+                            <div class="testimonial-slider">
+                                <div>
+                                    <div class="testimonial-item px-2 pb-3">
+                                        <div
+                                            class="testimonial-item__image mb-4"
+                                        >
+                                            <img
+                                                class="block w-full"
+                                                src="images/testimonial-img.jpg"
+                                                alt=""
+                                            />
+                                        </div>
+                                        <p class="font-light italic mb-4">
+                                            “Với đội ngũ chuyên gia SEO gần 10
+                                            năm kinh nghiệm. Tài nguyên đa dạng,
+                                            phong phú. Phương pháp SEO an toàn,
+                                            bền vững của chúng tôi, website của
+                                            bạn sẽ nhanh chóng có thứ hạng cao
+                                            trên TOP kết quả tìm kiếm.”
+                                        </p>
+                                        <div class="testimonial-item__user">
+                                            <div class="font-medium">
+                                                Nguyễn Văn Linh
+                                            </div>
+                                            <span class="text-sm"
+                                                >Giám đốc Marketing Buno</span
+                                            >
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="testimonial-item px-2 pb-3">
+                                        <div
+                                            class="testimonial-item__image mb-4"
+                                        >
+                                            <img
+                                                class="block w-full"
+                                                src="images/testimonial-img.jpg"
+                                                alt=""
+                                            />
+                                        </div>
+                                        <p class="font-light italic mb-4">
+                                            “Với đội ngũ chuyên gia SEO gần 10
+                                            năm kinh nghiệm. Tài nguyên đa dạng,
+                                            phong phú. Phương pháp SEO an toàn,
+                                            bền vững của chúng tôi, website của
+                                            bạn sẽ nhanh chóng có thứ hạng cao
+                                            trên TOP kết quả tìm kiếm.”
+                                        </p>
+                                        <div class="testimonial-item__user">
+                                            <div class="font-medium">
+                                                Nguyễn Văn Linh
+                                            </div>
+                                            <span class="text-sm"
+                                                >Giám đốc Marketing Buno</span
+                                            >
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="testimonial-item px-2 pb-3">
+                                        <div
+                                            class="testimonial-item__image mb-4"
+                                        >
+                                            <img
+                                                class="block w-full"
+                                                src="images/testimonial-img.jpg"
+                                                alt=""
+                                            />
+                                        </div>
+                                        <p class="font-light italic mb-4">
+                                            “Với đội ngũ chuyên gia SEO gần 10
+                                            năm kinh nghiệm. Tài nguyên đa dạng,
+                                            phong phú. Phương pháp SEO an toàn,
+                                            bền vững của chúng tôi, website của
+                                            bạn sẽ nhanh chóng có thứ hạng cao
+                                            trên TOP kết quả tìm kiếm.”
+                                        </p>
+                                        <div class="testimonial-item__user">
+                                            <div class="font-medium">
+                                                Nguyễn Văn Linh
+                                            </div>
+                                            <span class="text-sm"
+                                                >Giám đốc Marketing Buno</span
+                                            >
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-8 flex justify-center">
+                            <div class="statistical text-center flex-1">
+                                <div
+                                    class="statistical-title text-sm uppercase font-medium mb-4"
+                                >
+                                    Thống kê
+                                </div>
+
+                                <div>
+                                    <div
+                                        class="statistical-item border-b border-gray-100 py-5"
+                                    >
+                                        <div
+                                            class="statistical-item-title uppercase text-sm mb-3"
+                                        >
+                                            Doanh số
+                                        </div>
+                                        <span class="font-medium text-4xl"
+                                            >150%</span
+                                        >
+                                    </div>
+
+                                    <div class="border-b border-gray-100 py-5">
+                                        <div
+                                            class="statistical-item-title uppercase text-sm mb-3"
+                                        >
+                                            Tiết kiệm chi phí
+                                        </div>
+                                        <span class="font-medium text-4xl"
+                                            >30%</span
+                                        >
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end home story  -->
+
+            <!-- home story  -->
+            <div class="home-banner">
+                <div class="container xl:max-w-7xl mx-auto px-5">
+                    <div
+                        class="bg-gray-100 px-10 py-7 flex flex-col md:flex-row items-center justify-between"
+                    >
+                        <div
+                            class="home-banner__content text-center md:text-left mb-3 md:mb-0"
+                        >
+                            <h3 class="uppercase font-medium mb-1">
+                                Bắt đầu 30 ngày trải nghiệm miễn phí
+                            </h3>
+                            <p class="font-light">
+                                Bán hành nhanh và hiệu quả hơn 40%
+                            </p>
+                        </div>
+                        <a
+                            href="<%= urlAuth %>"
+                            class="px-10 py-3 bg-blue-500 text-white"
+                        >
+                            Bắt đầu
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- end home story  -->
+
+            <!-- home news -->
+            <div class="home-section home-news py-20">
+                <div class="container xl:max-w-7xl mx-auto px-5">
+                    <div class="home-title mb-10">
+                        <span>Khám phá</span>
+                    </div>
+                    <div class="home-section-content home-news-content -mx-5">
+                        <div class="news_slider">
+                            <div>
+                                <div class="news-card px-5 pb-5">
+                                    <div class="img mb-3">
+                                        <a href="#">
+                                            <img
+                                                class="block w-full"
+                                                src="/images/news1.jpg"
+                                                alt=""
+                                            />
+                                        </a>
+                                    </div>
+                                    <h5 class="text-lg">
+                                        <a href="#">
+                                            Trung Nguyên E-Coffee - Giải pháp
+                                            kinh doanh hàng đầu từ Tập đoàn cà
+                                            phê hàng đầu
+                                        </a>
+                                    </h5>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="news-card px-5 pb-5">
+                                    <div class="img mb-3">
+                                        <a href="#">
+                                            <img
+                                                class="block w-full"
+                                                src="/images/news2.jpg"
+                                                alt=""
+                                            />
+                                        </a>
+                                    </div>
+                                    <h5 class="text-lg">
+                                        <a href="#">
+                                            17 phần mềm quản lý công việc tốt
+                                            nhất cho doanh nghiệp của bạn
+                                        </a>
+                                    </h5>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="news-card px-5 pb-5">
+                                    <div class="img mb-3">
+                                        <a href="#">
+                                            <img
+                                                class="block w-full"
+                                                src="/images/news3.jpg"
+                                                alt=""
+                                            />
+                                        </a>
+                                    </div>
+                                    <h5 class="text-lg">
+                                        <a href="#">
+                                            15 ngành nghề đảm bảo đi du học về
+                                            không bao giờ sợ thất nghiệp
+                                        </a>
+                                    </h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--end  home news -->
+        </main>
+
+        <!-- footer -->
+        <%- include('../partials/footer.ejs') %>
+    </body>
+</html>

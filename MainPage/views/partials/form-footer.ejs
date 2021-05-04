@@ -1,0 +1,33 @@
+<% const urlStoreEncode = encodeURI(process.env.URL_STORE); %> <% const urlAuth
+= process.env.URL_AUTH + '/sign-up'; %>
+
+<div class="home-form">
+    <div class="box-form">
+        <div class="home-title text-center">
+            <h4>Bắt đầu dùng thử miễn phí 30 ngày</h4>
+            <p>
+                Cùng trải nghiệm phần mềm quản lý và bán hàng đa kênh được
+                60.000 doanh nghiệp lựa chọn
+            </p>
+        </div>
+
+        <div class="form">
+            <div class="row">
+                <div class="col-md-8">
+                    <input
+                        type="text"
+                        placeholder="Nhập tên cửa hàng, doanh nghiệp của bạn"
+                    />
+                </div>
+
+                <div class="col-md-4">
+                    <a href="<%= urlAuth %>">
+                        <button class="btn btn-primary">
+                            Dùng thử miễn phí
+                        </button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,89 @@
+<% const urlStoreEncode=encodeURI(process.env.URL_STORE); %> <% const
+urlAuth=process.env.URL_AUTH + '/sign-up' ; %>
+
+<div class="bg-blue-700">
+    <div class="container xl:max-w-7xl mx-auto px-5">
+        <div
+            class="py-5 flex items-center justify-between flex-col md:flex-row"
+        >
+            <div class="mb-3 md:mb-0 text-center md:text-left">
+                <span class="text-white text-lg">
+                    Quản lý bán hàng đa kênh chưa bao giờ dễ dàng đến thế
+                </span>
+            </div>
+
+            <a
+                href="<%= urlAuth %>"
+                class="border-2 border-white px-6 py-2 text-white"
+            >
+                Bắt đầu
+            </a>
+        </div>
+    </div>
+</div>
+<footer class="footer bg-gray-900">
+    <div class="container xl:max-w-7xl px-5 mx-auto">
+        <div class="footer-top">
+            <div class="mb-8">
+                <img class="logo" src="images/logo-white.png" alt="Insa" />
+            </div>
+
+            <div class="grid grid-cols-2 md:grid-cols-7 gap-5">
+                <div class="footer-col md:col-span-2">
+                    <div class="heading">
+                        <h4>Sản phẩm</h4>
+                    </div>
+
+                    <ul>
+                        <li><a href="/insa-facebook">Insa Facebook</a></li>
+                        <li><a href="/insa-pos">Insa Pos</a></li>
+                        <li><a href="insa-website">Insa Website</a></li>
+                        <li><a href="insa-shopee">Insa Shopee</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col md:col-span-2">
+                    <div class="heading">
+                        <h4>Công ty</h4>
+                    </div>
+
+                    <ul>
+                        <li><a href="">Giới thiệu</a></li>
+                        <li><a href="">Liên hệ</a></li>
+                        <li><a href="/kham-pha">Khám phá</a></li>
+                        <li><a href="">Điều kiện</a></li>
+                        <li><a href="">Chính sách</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col md:col-span-2">
+                    <div class="heading">
+                        <h4>Hỗ trợ</h4>
+                    </div>
+
+                    <ul>
+                        <li><a href="">Chính sách sử dụng</a></li>
+                        <li><a href="">Câu hỏi thường gặp</a></li>
+                        <li><a href="">Wiki insa</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <div class="heading">
+                        <h4>Social</h4>
+                    </div>
+
+                    <%- include('../partials/social.ejs') %>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <span>© Insa Viet Nam Company Limited. All rights reserved</span>
+        </div>
+    </div>
+</footer>
+
+<!-- script -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="/js/slick.min.js"></script>
+<script src="/js/main.js"></script>

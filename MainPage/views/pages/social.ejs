@@ -1,0 +1,234 @@
+<% const urlStoreEncode=encodeURI(process.env.URL_STORE); %> <% const
+urlAuth=process.env.URL_AUTH + '/sign-up' ; %>
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <%- include('../partials/head'); %>
+
+        <title>Insa - Nền tảng quản lý và bán hàng đa kênh</title>
+    </head>
+
+    <body class="social">
+        <%- include('../partials/header.ejs') %>
+        <main class="main">
+            <!-- home hero -->
+            <div class="home-hero padding-header bg-gray-100">
+                <div class="home-hero_inner">
+                    <div class="container xl:max-w-7xl mx-auto px-5">
+                        <div class="flex py-4 lg:py-20">
+                            <div class="md:w-3/5 flex items-center">
+                                <div
+                                    class="home-hero_content text-center md:text-left"
+                                >
+                                    <h2>
+                                        Bán hàng trên mạng xã hội chưa bao giờ
+                                        dễ dàng đến thế.
+                                    </h2>
+                                    <p class="mb-6 mt-3">
+                                        Lorem ipsum dolor sit amet, consectetur
+                                        adipiscing elit, sed do eiusmod tempor
+                                        incididunt ut labore et dolore magna
+                                        aliqua. Quis ipsum suspendisse ultrices
+                                        gravida. Risus commodo viverra maecenas
+                                        accumsan lacus vel facilisis.
+                                    </p>
+
+                                    <div class="block md:flex">
+                                        <a
+                                            href="<%= urlAuth %>"
+                                            class="btn btn-trial block mb-2 md:mb-0 md:mr-5"
+                                        >
+                                            <div class="flex items-center">
+                                                <span
+                                                    class="inline-block text-left flex-1 px-5"
+                                                >
+                                                    <b class="font-medium"
+                                                        >Dùng thử</b
+                                                    ><br />
+                                                    <span class="font-light"
+                                                        >Miễn phí 30 ngày</span
+                                                    >
+                                                </span>
+                                                <span
+                                                    class="arrow flex items-center justify-center border-l border-gray-300"
+                                                >
+                                                    <img
+                                                        src="images/arrow-light.png"
+                                                        alt=""
+                                                    />
+                                                </span>
+                                            </div>
+                                        </a>
+
+                                        <a
+                                            href="<%= urlAuth %>"
+                                            class="btn btn-buy block"
+                                        >
+                                            <div
+                                                class="flex items-center text-center"
+                                            >
+                                                <span
+                                                    class="inline-block flex-1 px-5"
+                                                >
+                                                    <b class="font-semibold"
+                                                        >Mua ngay</b
+                                                    >
+                                                </span>
+                                                <span
+                                                    class="arrow flex items-center justify-center border-l border-gray-100"
+                                                >
+                                                    <img
+                                                        src="images/arrow-blue.png"
+                                                        alt=""
+                                                    />
+                                                </span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end home hero  -->
+
+            <div class="py-16">
+                <div class="container xl:max-w-7xl mx-auto px-5">
+                    <div class="home-title">
+                        <span> Insa facebook </span>
+                    </div>
+                </div>
+
+                <div class="py-20">
+                    <div class="container xl:max-w-7xl mx-auto px-5">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-20">
+                            <div>
+                                <div class="max-w-lg">
+                                    <h3 class="text-2xl lg:text-3xl">
+                                        Quản lý nhiều trang cùng lúc
+                                    </h3>
+                                    <p class="font-light text-gray-600 my-4">
+                                        Giúp nhà bán hàng tiết kiệm thời gian,
+                                        công sức và kiểm soát đầu việc hiệu quả
+                                        hơn.
+                                    </p>
+                                    <img
+                                        class="block w-full mx-auto"
+                                        src="images/facebook1.jpg"
+                                        alt="Quản lý nhiều trang cùng lúc"
+                                    />
+                                </div>
+                            </div>
+                            <div>
+                                <div class="max-w-lg md:mt-20">
+                                    <h3 class="text-2xl lg:text-3xl">
+                                        Tối ưu giao tiếp với khách hàng
+                                    </h3>
+                                    <p class="font-light text-gray-600 my-4">
+                                        Ẩn bình luận tự động, phân loại hội
+                                        thoại dễ dàng, gửi tin nhắn hàng loạt.
+                                    </p>
+                                    <img
+                                        class="block w-full mx-auto"
+                                        src="images/facebook2.jpg"
+                                        alt="Quản lý nhiều trang cùng lúc"
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-gray-100 py-20">
+                    <div class="container xl:max-w-7xl mx-auto px-5">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-20">
+                            <div>
+                                <div class="max-w-lg">
+                                    <h3 class="text-2xl lg:text-3xl">
+                                        Quản lý nhiều trang cùng lúc
+                                    </h3>
+                                    <p class="font-light text-gray-600 my-4">
+                                        Giúp nhà bán hàng tiết kiệm thời gian,
+                                        công sức và kiểm soát đầu việc hiệu quả
+                                        hơn.
+                                    </p>
+                                    <img
+                                        class="block w-full mx-auto"
+                                        src="images/facebook3.jpg"
+                                        alt="Quản lý nhiều trang cùng lúc"
+                                    />
+                                </div>
+                            </div>
+                            <div>
+                                <div class="max-w-lg md:mt-20">
+                                    <h3 class="text-2xl lg:text-3xl">
+                                        Tối ưu giao tiếp với khách hàng
+                                    </h3>
+                                    <p class="font-light text-gray-600 my-4">
+                                        Ẩn bình luận tự động, phân loại hội
+                                        thoại dễ dàng, gửi tin nhắn hàng loạt.
+                                    </p>
+                                    <img
+                                        class="block w-full mx-auto"
+                                        src="images/facebook4.jpg"
+                                        alt="Quản lý nhiều trang cùng lúc"
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="py-20 border-b border-gray-200">
+                    <div class="container xl:max-w-7xl mx-auto px-5">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-20">
+                            <div>
+                                <div class="max-w-lg">
+                                    <h3 class="text-2xl lg:text-3xl">
+                                        Quản lý nhiều trang cùng lúc
+                                    </h3>
+                                    <p
+                                        class="font-light text-gray-600 mt-3 mb-4"
+                                    >
+                                        Giúp nhà bán hàng tiết kiệm thời gian,
+                                        công sức và kiểm soát đầu việc hiệu quả
+                                        hơn.
+                                    </p>
+                                    <img
+                                        class="block w-full mx-auto"
+                                        src="images/facebook5.jpg"
+                                        alt="Quản lý nhiều trang cùng lúc"
+                                    />
+                                </div>
+                            </div>
+                            <div>
+                                <div class="max-w-lg md:mt-20">
+                                    <h3 class="text-2xl lg:text-3xl">
+                                        Tối ưu giao tiếp với khách hàng
+                                    </h3>
+                                    <p class="font-light text-gray-600 my-4">
+                                        Ẩn bình luận tự động, phân loại hội
+                                        thoại dễ dàng, gửi tin nhắn hàng loạt.
+                                    </p>
+                                    <img
+                                        class="block w-full mx-auto"
+                                        src="images/facebook6.jpg"
+                                        alt="Quản lý nhiều trang cùng lúc"
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- question -->
+                <%- include('../partials/question.ejs') %>
+            </div>
+        </main>
+
+        <!-- footer -->
+        <%- include('../partials/footer.ejs') %>
+    </body>
+</html>

@@ -1,0 +1,152 @@
+<% const urlStoreEncode = encodeURI(process.env.URL_STORE); %> <% const urlAuth
+= process.env.URL_AUTH + '/sign-up'; %>
+
+<header class="header z-40 bg-white border-b border-gray-100">
+    <div class="container xl:max-w-7xl py-5 px-5 lg:py-2 mx-auto">
+        <div class="header-container flex justify-between items-center">
+            <div class="header-left mr-10">
+                <div class="logo">
+                    <a href="/">
+                        <img src="images/logo_v2.png" alt="Insa" />
+                    </a>
+                </div>
+            </div>
+
+            <nav
+                class="nav lg:flex lg:justify-between lg:items-center lg:flex-1"
+            >
+                <div
+                    class="close-menu py-5 text-right flex items-center justify-between lg:hidden"
+                >
+                    <img src="images/logo_v2.png" class="logo" alt="Insa" />
+                    <span class="icon"></span>
+                </div>
+                <ul class="main-menu lg:flex">
+                    <li class="mr-5"><a href="/">Tổng quan</a></li>
+                    <li class="mr-5">
+                        <a>Sản phẩm</a>
+
+                        <ul class="products">
+                            <li>
+                                <a href="/insa-pos">
+                                    <div class="icon">
+                                        <img
+                                            src="images/insa-pos.svg"
+                                            alt="Pos - Phần mềm quản lý bán hàng"
+                                        />
+                                    </div>
+                                    <div>
+                                        <h5>Insa Pos</h5>
+                                        <p>Phần mềm quản lý bán hàng</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/insa-website">
+                                    <div class="icon">
+                                        <img
+                                            src="images/insa-website.svg"
+                                            alt="Thiết kế website chuyên nghiệp"
+                                        />
+                                    </div>
+                                    <div>
+                                        <h5>Insa Website</h5>
+                                        <p>Thiết kế website chuyên nghiệp</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/insa-facebook">
+                                    <div class="icon">
+                                        <img
+                                            src="images/insa-facebook.svg"
+                                            alt="Phần mềm quản lý bán hàng trên Facebook"
+                                        />
+                                    </div>
+                                    <div>
+                                        <h5>Insa Facebook</h5>
+                                        <p>
+                                            Phần mềm quản lý bán hàng trên
+                                            Facebook
+                                        </p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/insa-shopee">
+                                    <div class="icon">
+                                        <img
+                                            src="images/insa-shopee.svg"
+                                            alt="Bán hàng trên sàn 
+                      thương mại điện tử"
+                                        />
+                                    </div>
+                                    <div>
+                                        <h5>Insa Shopee</h5>
+                                        <p>
+                                            Bán hàng trên sàn thương mại điện tử
+                                        </p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="icon">
+                                        <img
+                                            src="images/insa-ship.svg"
+                                            alt="Cổng vận chuyển, 
+                    thu hộ COD toàn quốc"
+                                        />
+                                    </div>
+                                    <div>
+                                        <h5>Insa Shipping</h5>
+                                        <p>
+                                            Cổng vận chuyển, thu hộ COD toàn
+                                            quốc
+                                        </p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <div class="icon">
+                                        <img
+                                            src="images/insa-omni.svg"
+                                            alt="Quản lý bán hàng đa kênh"
+                                        />
+                                    </div>
+                                    <div>
+                                        <h5>Omnichanel</h5>
+                                        <p>Quản lý bán hàng đa kênh</p>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="mr-5"><a href="/kham-pha">Khám phá</a></li>
+                    <li class="mr-5"><a href="/bao-gia">Báo giá</a></li>
+                    <li class="mr-5"><a href="/lien-he">Liên hệ</a></li>
+                </ul>
+
+                <div class="header-right p-5 lg:p-0">
+                    <div class="btn-group">
+                        <a
+                            href="<%= process.env.URL_STORE %>"
+                            class="btn-signup block text-center mb-3 lg:mb-0 lg:inline-block px-4 py-3 lg:px-0 lg:py-0 lg:mr-5"
+                        >
+                            Đăng nhập
+                        </a>
+
+                        <a
+                            href="<%= urlAuth %>"
+                            class="btn-trial block text-center lg:inline-block text-white px-4 py-3"
+                        >
+                            Dùng thử miễn phí
+                        </a>
+                    </div>
+                </div>
+            </nav>
+            <div class="toggle-menu lg:hidden"><i class="icon"></i></div>
+        </div>
+    </div>
+</header>

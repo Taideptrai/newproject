@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="107" height="90" viewBox="0 0 107 90">
+    <defs>
+        <style>
+            .cls-3{fill:#0872d7}
+        </style>
+    </defs>
+    <g id="Group_2043" data-name="Group 2043" transform="translate(-398 -1417)">
+        <path id="Subtraction_14" fill="#d6f8ff" d="M70 0H0a69.534 69.534 0 0 0 5.5 27.25 69.745 69.745 0 0 0 15 22.25 69.578 69.578 0 0 0 22.256 15A69.457 69.457 0 0 0 70 70V0z" data-name="Subtraction 14" transform="rotate(180 252.5 743.5)"/>
+        <g id="ic-ecommerce-invoice" transform="translate(398 1427)">
+            <path id="Rectangle_114" fill="none" d="M0 0H80V80H0z" data-name="Rectangle 114"/>
+            <g id="Layer" transform="translate(11.667 3.356)">
+                <g id="Vrstva_169" data-name="Vrstva 169">
+                    <path id="Path_201" d="M50.167 1H13.5a10 10 0 0 0-10 10v59.333A3.667 3.667 0 0 0 9.567 73.1l9.2-7.9 12.667 8.467a3.667 3.667 0 0 0 4.433-.267l9.3-7.967L54.1 73.1a3.667 3.667 0 0 0 6.067-2.767V11a10 10 0 0 0-10-10zM53.5 63.767l-5.933-5.1a3.733 3.733 0 0 0-4.8 0l-9.533 8.167-12.667-8.467a3.7 3.7 0 0 0-4.433.267L10.167 63.8V11A3.333 3.333 0 0 1 13.5 7.667h36.667A3.333 3.333 0 0 1 53.5 11z" class="cls-3" data-name="Path 201" transform="translate(-3.5 -1)"/>
+                    <path id="Path_202" d="M9.833 11.667h23.334a3.333 3.333 0 0 0 0-6.667H9.833a3.333 3.333 0 1 0 0 6.667z" class="cls-3" data-name="Path 202" transform="translate(3.5 8.333)"/>
+                    <path id="Path_203" d="M9.833 15.667h13.334a3.333 3.333 0 0 0 0-6.667H9.833a3.333 3.333 0 1 0 0 6.667z" class="cls-3" data-name="Path 203" transform="translate(3.5 17.667)"/>
+                    <path id="Path_204" d="M36.5 13H9.833a3.333 3.333 0 1 0 0 6.667H36.5a3.333 3.333 0 1 0 0-6.667z" class="cls-3" data-name="Path 204" transform="translate(3.5 27)"/>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

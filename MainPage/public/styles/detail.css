@@ -1,0 +1,11 @@
+.detail-heading .socials ul {
+    display: flex;
+}
+
+.detail-heading .socials ul li {
+    margin-right: 10px;
+}
+
+.detail-heading .socials ul li:hover a {
+    color: var(--main-color);
+}

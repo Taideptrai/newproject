@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="Layer" width="50.417" height="50.417" viewBox="0 0 50.417 50.417">
+    <defs>
+        <style>
+            .cls-1{fill:#fff}
+        </style>
+    </defs>
+    <g id="Vrstva_150" data-name="Vrstva 150">
+        <path id="Path_154" d="M44.542 1H7.875A6.875 6.875 0 0 0 1 7.875v36.667a6.875 6.875 0 0 0 6.875 6.875h36.667a6.875 6.875 0 0 0 6.875-6.875V7.875A6.875 6.875 0 0 0 44.542 1zM7.875 5.583h36.667a2.292 2.292 0 0 1 2.292 2.292v6.875H5.583V7.875a2.292 2.292 0 0 1 2.292-2.292zm36.667 41.25H7.875a2.292 2.292 0 0 1-2.292-2.292V19.333h41.25v25.209a2.292 2.292 0 0 1-2.291 2.291z" class="cls-1" data-name="Path 154" transform="translate(-1 -1)"/>
+        <rect id="Rectangle_7" width="4.583" height="4.583" class="cls-1" data-name="Rectangle 7" rx=".2" transform="translate(6.875 6.875)"/>
+        <rect id="Rectangle_8" width="4.583" height="4.583" class="cls-1" data-name="Rectangle 8" rx=".2" transform="translate(13.75 6.875)"/>
+        <rect id="Rectangle_9" width="4.583" height="4.583" class="cls-1" data-name="Rectangle 9" rx=".2" transform="translate(20.625 6.875)"/>
+    </g>
+</svg>

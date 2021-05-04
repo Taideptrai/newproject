@@ -1,0 +1,22 @@
+:root {
+    /* color */
+    --main-bg-color: #f9fafe;
+    --main-color: #4353ff;
+    --main-color-light: #208df4;
+    --main-color-dark: #1845a1;
+    --text-color-dark: #101025;
+    --text-color-light: #717171;
+    --footer-bg-color: #111;
+
+    /* size */
+    --main-padding: 15px;
+    --container-big: 1140px;
+    --container-lg: 960px;
+    --container-md: 720px;
+    --container-sm: 540px;
+
+    /* btn size*/
+    --btn-size-md: 48px;
+    --input-size-md: 48px;
+    --border-radius: 2px;
+}

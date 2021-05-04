@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="100" height="90" viewBox="0 0 100 90">
+    <g id="Group_2042" data-name="Group 2042" transform="translate(-805 -1417)">
+        <rect id="Rectangle_829" width="70" height="70" fill="#ead9ff" data-name="Rectangle 829" rx="35" transform="translate(835 1417)"/>
+        <g id="ic-ecommerce-delivery" transform="translate(805 1427)">
+            <path id="Rectangle_111" fill="none" d="M0 0H80V80H0z" data-name="Rectangle 111"/>
+            <g id="Layer" transform="translate(3.333 10.016)">
+                <g id="Vrstva_176" data-name="Vrstva 176">
+                    <path id="Path_198" fill="#0872d7" d="M63.867 17.933a4.033 4.033 0 0 0-3.333-1.6h-6.2V13a10 10 0 0 0-10-10H11A10 10 0 0 0 1 13v33.333a10 10 0 0 0 10 10h.6a10 10 0 0 0 18.8 0h11.2a10 10 0 0 0 18.833 0 3.333 3.333 0 0 0 .567 0h9.333a4 4 0 0 0 4-4v-19.1a3.867 3.867 0 0 0-.8-2.4zM21 56.333A3.333 3.333 0 1 1 24.333 53 3.333 3.333 0 0 1 21 56.333zm30 0A3.333 3.333 0 1 1 54.333 53 3.333 3.333 0 0 1 51 56.333zm16.667-6.667H61a3.333 3.333 0 0 0-.567 0 10 10 0 0 0-18.833 0H30.4a10 10 0 0 0-18.8 0H11a3.333 3.333 0 0 1-3.333-3.333V13A3.333 3.333 0 0 1 11 9.667h33.333A3.333 3.333 0 0 1 47.667 13v23.333a3.333 3.333 0 1 0 6.667 0V23h5l8.333 11.1z" data-name="Path 198" transform="translate(-1 -3)"/>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,415 @@
+<% const urlStoreEncode=encodeURI(process.env.URL_STORE); %> <% const
+urlAuth=process.env.URL_AUTH + '/sign-up' ; %>
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <%- include('../partials/head'); %>
+
+        <title>Insa - Nền tảng quản lý và bán hàng đa kênh</title>
+    </head>
+
+    <body class="social">
+        <%- include('../partials/header.ejs') %>
+        <main class="main">
+            <!-- home hero -->
+            <div class="home-hero padding-header bg-gray-100">
+                <div class="home-hero_inner">
+                    <div class="container xl:max-w-7xl mx-auto px-5">
+                        <div class="flex py-4 lg:py-20">
+                            <div class="md:w-3/5 flex items-center">
+                                <div
+                                    class="home-hero_content text-center md:text-left"
+                                >
+                                    <h2>
+                                        Quản lý hoạt động bán hàng tại chỗ
+                                        chuyên nghiệp
+                                    </h2>
+                                    <p class="mb-6 mt-3">
+                                        Lorem ipsum dolor sit amet, consectetur
+                                        adipiscing elit, sed do eiusmod tempor
+                                        incididunt ut labore et dolore magna
+                                        aliqua. Quis ipsum suspendisse ultrices
+                                        gravida. Risus commodo viverra maecenas
+                                        accumsan lacus vel facilisis.
+                                    </p>
+
+                                    <div class="block md:flex">
+                                        <a
+                                            href="<%= urlAuth %>"
+                                            class="btn btn-trial block mb-2 md:mb-0 md:mr-5"
+                                        >
+                                            <div class="flex items-center">
+                                                <span
+                                                    class="inline-block text-left flex-1 px-5"
+                                                >
+                                                    <b class="font-medium"
+                                                        >Dùng thử</b
+                                                    ><br />
+                                                    <span class="font-light"
+                                                        >Miễn phí 30 ngày</span
+                                                    >
+                                                </span>
+                                                <span
+                                                    class="arrow flex items-center justify-center border-l border-gray-300"
+                                                >
+                                                    <img
+                                                        src="images/arrow-light.png"
+                                                        alt=""
+                                                    />
+                                                </span>
+                                            </div>
+                                        </a>
+
+                                        <a
+                                            href="<%= urlAuth %>"
+                                            class="btn btn-buy block"
+                                        >
+                                            <div
+                                                class="flex items-center text-center"
+                                            >
+                                                <span
+                                                    class="inline-block flex-1 px-5"
+                                                >
+                                                    <b class="font-semibold"
+                                                        >Mua ngay</b
+                                                    >
+                                                </span>
+                                                <span
+                                                    class="arrow flex items-center justify-center border-l border-gray-100"
+                                                >
+                                                    <img
+                                                        src="images/arrow-blue.png"
+                                                        alt=""
+                                                    />
+                                                </span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end home hero  -->
+
+            <div class="py-16">
+                <div class="container xl:max-w-7xl mx-auto px-5">
+                    <div class="home-title">
+                        <span> Insa Pos </span>
+                    </div>
+                </div>
+
+                <div class="pt-5 md:pt-10 pb-10 md:pb-20">
+                    <div class="container xl:max-w-7xl mx-auto px-5">
+                        <div class="text-center max-w-lg mx-auto my-7">
+                            <span class="text-2xl md:text-3xl">
+                                Tính năng vượt trội giúp bạn bán hàng dễ dàng
+                                hơn
+                            </span>
+                        </div>
+                        <div
+                            class="grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-20"
+                        >
+                            <div>
+                                <div class="icon">icon</div>
+                                <h5 class="text-lg my-3">Bán hàng hiệu quả.</h5>
+                                <p class="font-light">
+                                    INSA POS giúp công đoạn gọi món, chọn đồ,
+                                    thanh toán diễn ra tiện lợi, chính xác. Tất
+                                    cả sản phẩm, số liệu tại điểm bán và online
+                                    đều được đồng bộ.
+                                </p>
+                            </div>
+                            <div>
+                                <div class="icon">icon</div>
+                                <h5 class="text-lg my-3">
+                                    Tiết kiệm thời gian.
+                                </h5>
+                                <p class="font-light">
+                                    Việc đối chiếu số liệu, kiểm kho, xuất báo
+                                    cáo, quản lý chi nhánh sẽ trở nên nhanh
+                                    chóng và đơn giản hơn rất nhiều với sự trợ
+                                    giúp của INSA POS.
+                                </p>
+                            </div>
+                            <div>
+                                <div class="icon">icon</div>
+                                <h5 class="text-lg my-3">
+                                    Chăm sóc khách hàng tốt nhất.
+                                </h5>
+                                <p class="font-light">
+                                    Với các tính năng và báo cáo của INSA POS,
+                                    bạn có thể lên chương trình chăm sóc khách
+                                    hàng và marketing một cách hiệu quả hơn.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="py-10 md:py-20 bg-gray-100">
+                    <div class="container xl:max-w-7xl mx-auto px-5">
+                        <div
+                            class="md:flex md:flex-row-reverse md:items-center md:justify-around"
+                        >
+                            <div class="md:px-5 mb-5 md:mb-0">
+                                <img
+                                    class="block w-full md:max-w-full mx-auto"
+                                    src="images/facebook1.jpg"
+                                    alt="Quản lý nhiều trang cùng lúc"
+                                />
+                            </div>
+                            <div class="md:px-5">
+                                <h3 class="text-3xl">Quản lý sản phẩm</h3>
+                                <div
+                                    class="grid gap-2 font-light text-gray-600 mt-3"
+                                >
+                                    <p>
+                                        - Nhập liệu và tra cứu sản phẩm nhanh
+                                        chóng
+                                    </p>
+                                    <p>
+                                        - Quản lý danh mục, thương hiệu, thuộc
+                                        tính
+                                    </p>
+                                    <p>
+                                        - Tạo combo và chương trình khuyến mãi
+                                    </p>
+                                    <p>- Quản lý giá bán cho các chi nhánh</p>
+                                    <p>
+                                        - Đồng bộ với các sàn thương mại điện tử
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="py-10 md:py-20">
+                    <div class="container xl:max-w-7xl mx-auto px-5">
+                        <div class="md:flex md:items-center md:justify-around">
+                            <div class="md:px-5 mb-5 md:mb-0">
+                                <img
+                                    class="block w-full md:max-w-full mx-auto"
+                                    src="images/facebook1.jpg"
+                                    alt="Quản lý nhiều trang cùng lúc"
+                                />
+                            </div>
+                            <div class="md:px-5">
+                                <h3 class="text-3xl">Quản lý kho hàng</h3>
+                                <div
+                                    class="grid gap-2 font-light text-gray-600 mt-3"
+                                >
+                                    <p>
+                                        - Nhập hàng, trả hàng cho nhà cung cấp
+                                    </p>
+                                    <p>
+                                        - Điều chuyển hàng giữa các kho hàng,
+                                        cửa hàng
+                                    </p>
+                                    <p>
+                                        - Hỗ trợ máy đọc mã vạch, kiểm kho, xuất
+                                        kho
+                                    </p>
+                                    <p>
+                                        - Dự báo nhập hàng theo lượng tồn, tốc
+                                        độ bán hàng
+                                    </p>
+                                    <p>
+                                        - Báo cáo tồn kho, tỉ lệ hàng hóa, diện
+                                        tích lưu kho
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="py-10 md:py-20 bg-gray-100">
+                    <div class="container xl:max-w-7xl mx-auto px-5">
+                        <div
+                            class="md:flex md:flex-row-reverse md:items-center md:justify-around"
+                        >
+                            <div class="md:px-5 mb-5 md:mb-0">
+                                <img
+                                    class="block w-full md:max-w-full mx-auto"
+                                    src="images/facebook1.jpg"
+                                    alt="Quản lý nhiều trang cùng lúc"
+                                />
+                            </div>
+                            <div class="md:px-5">
+                                <h3 class="text-3xl">Bán hàng tại quầy</h3>
+                                <div
+                                    class="grid gap-2 font-light text-gray-600 mt-3"
+                                >
+                                    <p>
+                                        - Bán hàng, trả hàng bằng máy đọc mã
+                                        vạch
+                                    </p>
+                                    <p>- Kết nối máy in, két tiền tự động</p>
+                                    <p>
+                                        - Tính doanh số cho nhân viên bán hàng,
+                                        kỹ thuật
+                                    </p>
+                                    <p>
+                                        - Hỗ trợ chuyển đơn hàng online sang
+                                        phiếu bán lẻ
+                                    </p>
+                                    <p>
+                                        - Tự động theo dõi và báo cáo vào hệ
+                                        thống
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="py-10 md:py-20">
+                    <div class="container xl:max-w-7xl mx-auto px-5">
+                        <div class="md:flex md:items-center md:justify-around">
+                            <div class="md:px-5 mb-5 md:mb-0">
+                                <img
+                                    class="block w-full md:max-w-full mx-auto"
+                                    src="images/facebook1.jpg"
+                                    alt="Quản lý nhiều trang cùng lúc"
+                                />
+                            </div>
+                            <div class="md:px-5">
+                                <h3 class="text-3xl">Xử lý đơn hàng online</h3>
+                                <div
+                                    class="grid gap-2 font-light text-gray-600 mt-3"
+                                >
+                                    <p>
+                                        - Đồng bộ đơn hàng từ website, facebook,
+                                        sàn thương mại điện tử
+                                    </p>
+                                    <p>
+                                        - Tự động tính và tối ưu phí vận chuyển
+                                    </p>
+                                    <p>
+                                        - In nhiều phiếu gửi cùng lúc nhanh
+                                        chóng, không sót đơn
+                                    </p>
+                                    <p>
+                                        - Liên tục cập nhật trạng thái đơn hàng
+                                    </p>
+                                    <p>
+                                        - Tổng hợp, phân luồng, lọc đơn, hỗ trợ
+                                        xử lý khiếu nại và chăm sóc khách hàng
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="py-10 md:py-20 bg-gray-100">
+                    <div class="container xl:max-w-7xl mx-auto px-5">
+                        <div
+                            class="md:flex md:flex-row-reverse md:items-center md:justify-around"
+                        >
+                            <div class="md:px-5 mb-5 md:mb-0">
+                                <img
+                                    class="block w-full md:max-w-full mx-auto"
+                                    src="images/facebook1.jpg"
+                                    alt="Quản lý nhiều trang cùng lúc"
+                                />
+                            </div>
+                            <div class="md:px-5">
+                                <h3 class="text-3xl">Chăm sóc khách hàng</h3>
+                                <div
+                                    class="grid gap-2 font-light text-gray-600 mt-3"
+                                >
+                                    <p>
+                                        - Tổng hợp lịch sử mua hàng từ mọi kênh
+                                    </p>
+                                    <p>- Phân nhóm khách hàng theo đặc điểm</p>
+                                    <p>- Phát hành thẻ khách hàng</p>
+                                    <p>- Gửi email, SMS cho khách hàng</p>
+                                    <p>
+                                        - Báo cáo chu kỳ mua hàng, thời gian
+                                        khách chưa mua lại
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="py-10 md:py-20">
+                    <div class="container xl:max-w-7xl mx-auto px-5">
+                        <div class="md:flex md:items-center md:justify-around">
+                            <div class="flex-1 md:px-5 mb-5 md:mb-0">
+                                <img
+                                    class="block w-full md:max-w-full mx-auto"
+                                    src="images/facebook1.jpg"
+                                    alt="Quản lý nhiều trang cùng lúc"
+                                />
+                            </div>
+                            <div class="flex-1 md:px-5">
+                                <h3 class="text-3xl">Hỗ trợ kế toán</h3>
+                                <div
+                                    class="grid gap-2 font-light text-gray-600 mt-3"
+                                >
+                                    <p>
+                                        - Cho phép lập phiếu thu chi nhanh chóng
+                                    </p>
+                                    <p>
+                                        - Ghi nhận công nợ khách hàng theo ngày,
+                                        theo nhân viên bán hàng, theo đầu tài
+                                        khoản, theo nhà cung cấp
+                                    </p>
+                                    <p>- Báo cáo kết quả kinh doanh</p>
+                                    <p>- Tổng hợp bảng cân đối kế toán</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="py-10 md:py-20 bg-gray-100">
+                    <div class="container xl:max-w-7xl mx-auto px-5">
+                        <div
+                            class="md:flex md:flex-row-reverse md:items-center md:justify-around"
+                        >
+                            <div class="md:px-5 mb-5 md:mb-0">
+                                <img
+                                    class="block w-full md:max-w-full mx-auto"
+                                    src="images/facebook1.jpg"
+                                    alt="Quản lý nhiều trang cùng lúc"
+                                />
+                            </div>
+                            <div class="md:px-5">
+                                <h3 class="text-3xl">
+                                    Quản lý đại lý và chuỗi phân
+                                </h3>
+                                <div
+                                    class="grid gap-2 font-light text-gray-600 mt-3"
+                                >
+                                    <p>
+                                        - Đồng bộ dữ liệu sản phẩm giữa tổng
+                                        công ty và đại lý, giảm thời gian nhập
+                                        liệu
+                                    </p>
+                                    <p>- Ghi nhận công nợ đại lý</p>
+                                    <p>- Hiển thị tồn kho đại lý</p>
+                                    <p>- Cho phép đại lý lập phiếu mua hàng</p>
+                                    <p>- Tổng hợp, báo cáo doanh số bán buôn</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- question -->
+                <%- include('../partials/question.ejs') %>
+            </div>
+        </main>
+
+        <!-- footer -->
+        <%- include('../partials/footer.ejs') %>
+    </body>
+</html>

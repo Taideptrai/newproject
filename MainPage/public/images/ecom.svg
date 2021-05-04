@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="Layer" width="50.417" height="41.212" viewBox="0 0 50.417 41.212">
+    <defs>
+        <style>
+            .cls-1{fill:#fff;fill-rule:evenodd}
+        </style>
+    </defs>
+    <g id="Vrstva_182" data-name="Vrstva 182">
+        <path id="Path_532" d="M3.839 16.728h23.833a1.146 1.146 0 0 0 .3 0 6.875 6.875 0 1 0-7.219-4.583H3.839a2.108 2.108 0 0 0-1.833 2.292 2.108 2.108 0 0 0 1.833 2.291zm23.375-9.166a2.292 2.292 0 1 1-2.292 2.292 2.292 2.292 0 0 1 2.292-2.292z" class="cls-1" data-name="Path 532" transform="translate(.286 -3.017)"/>
+        <path id="Path_533" d="M31.5 15H6.292a2.292 2.292 0 0 0 0 4.583h18.746A6.875 6.875 0 1 0 31.5 15zm0 9.167a2.292 2.292 0 1 1 2.292-2.292 2.292 2.292 0 0 1-2.292 2.292z" class="cls-1" data-name="Path 533" transform="translate(2.875 12.462)"/>
+        <path id="Path_534" d="M44.542 7a6.875 6.875 0 0 0-6.463 9.167H3.292a2.292 2.292 0 1 0 0 4.583h41.25a6.875 6.875 0 0 0 0-13.75zm0 9.167a2.292 2.292 0 1 1 2.292-2.292 2.292 2.292 0 0 1-2.292 2.292z" class="cls-1" data-name="Path 534" transform="translate(-1 2.129)"/>
+    </g>
+</svg>

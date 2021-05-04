@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="105" height="80" viewBox="0 0 105 80">
+    <defs>
+        <style>
+            .cls-3{fill:#0872d7}
+        </style>
+    </defs>
+    <g id="Group_2041" data-name="Group 2041" transform="translate(-1200 -1417)">
+        <rect id="Rectangle_830" width="70" height="70" fill="#fff2d5" data-name="Rectangle 830" rx="20" transform="translate(1235 1417)"/>
+        <g id="ic-statistics-3" transform="translate(1200 1417)">
+            <path id="Rectangle_240" fill="none" d="M0 0H80V80H0z" data-name="Rectangle 240"/>
+            <g id="Layer" transform="translate(3.251 3.275)">
+                <g id="Vrstva_248" data-name="Vrstva 248">
+                    <path id="Path_491" d="M40.708 74.415H11.175a10 10 0 0 1-10-10c-.167-20-.167-40-.167-59.833a3.34 3.34 0 1 1 6.667-.167v60a3.333 3.333 0 0 0 2.8 3.333h60.533a3.337 3.337 0 0 1 .3 6.667z" class="cls-3" data-name="Path 491" transform="translate(-.996 -.965)"/>
+                    <path id="Path_492" d="M4.733 34.975V19.641a15.133 15.133 0 0 1 9.3-14.033 15.3 15.3 0 0 1 17.567 2.7 15.133 15.133 0 0 1 5.2 11.567v8.9a18.333 18.333 0 0 0 14.867 18.233 26.666 26.666 0 0 0 3.667.333H59a3.367 3.367 0 1 1 .033 6.733 50.535 50.535 0 0 1-7.1-.2 23.867 23.867 0 0 1-10.2-3.6 24.767 24.767 0 0 1-11.4-17.167 25.6 25.6 0 0 1-.3-3.9v-9.4a9.367 9.367 0 0 0-18.667-.933 8.5 8.5 0 0 0 0 1.3v30.434a3.333 3.333 0 0 1-6.667 0V34.975z" class="cls-3" data-name="Path 492" transform="translate(7.645 6.042)"/>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
